@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8" language="JavaScript"></script>
+    <script src="liquidFillGauge.js" language="JavaScript"></script>
+    <script src="thermometer.js" language="JavaScript"></script>
+    <script src="particles.js" language="JavaScript"></script>
+    <script src="vslider.js" language="JavaScript"></script>
+    <link rel="stylesheet" href="time.css" />
+    <script src="http://github.hubspot.com/odometer/odometer.js"></script>
+</head>
+
+<body>
+
+<div class="topnav">
+    <a href="Home.html" >Home</a>
+    <a href="Malting.html" >Malting</a>
+    <a href="Mashing.html">Mashing</a>
+    <a href="Boiling.html">Boiling & Hopping</a>
+    <a href="Fermenting.html" class="active">Fermenting</a>
+    <a href="Bottling.html">Bottling & Carbonation</a>
+
+</div>
+
+<h1>Fermenting</h1>
+
+<div class="row">
+        <div id="odometer1" class="odometer">00</div>
+        <div id="odometer2" class="odometer">00</div>
+        <p id="days" >DAYS</p>
+    <div class="thermo">
+        <svg id="tempslider" width="100" height="350"></svg>
+        <p id="alert1" style="color: white; font-size: 19px"> <br> <br>  That's too cold. The temperature needs to be higher. </p>
+        <p id="alert2" style="color: white; font-size: 19px;"> That's too high. The wort will go bad. Reduce the temperature. </p>
+    </div>
+    <div class="partdiv6" id="yeastdiv">
+    </div>
+    <div class="partdiv7" id="co2div">
+        <script>
+            renderCO2();
+        </script>
+    </div>
+    <div class="wort"></div>
+    <div class="viz2"></div>
+
+    <div class="text">
+        <p>There are two main types of beers: ales and lagers. Depending on the type of beer you want to brew, select one of the yeasts below. </p>
+        <div class="row">
+
+            <button class="button" id="aleyeast" onclick="resetFerment('odometer2','odometer1', 'aleyeast'); showDiv('#aleferment', '#lagerferment'); renderaleyeast(); renderftemp(60, 70, 1); this.onclick=null;">Ale Yeast</button>
+
+            <button class="button" id="lageryeast" onclick="resetFerment('odometer1','odometer2', 'lageryeast'); showDiv('#lagerferment', '#aleferment'); renderlageryeast(); renderftemp(45, 55, 2); this.onclick=null;">Lager Yeast</button>
+
+        </div>
+        <div class="row">
+            <p id="aleferment">Ale yeast generally ferments at the top. <br><br>
+                Ales are fermented at around room temperature. Set the temperature to 60-68F on the thermometer. <br><br>
+                Ales are fermented at room temperature for 30 days. <br><br>
+                Notice the bubbles of carbon dioxide forming as yeast breaks down sugars in the wort to form alcohol.
+            </p>
+            <p id="lagerferment">Lager yeast generally ferments at the bottom. <br><br>
+                Lagers are fermented at colder temperatures than ales. Set the temperature to around 50F on the thermometer. <br><br>
+                Lagers are fermented at these cold temperatures for a few months.<br><br>
+                Notice the bubbles of carbon dioxide forming as yeast breaks down sugars in the wort to form alcohol.
+            </p>
+        </div>
+    </div>
+
+
+
+</div>
+
+<div class="row" id="nav">
+    <button class="button" > <a href="Boiling.html"> Previous: Boiling </a></button>
+    <button class="button" > <a href="Bottling.html"> Next: Bottling & Carbonation</a></button>
+</div>
+
+
+
+</body>
+</html>

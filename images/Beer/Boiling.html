@@ -1,0 +1,93 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8" language="JavaScript"></script>
+    <script src="liquidFillGauge.js" language="JavaScript"></script>
+    <script src="thermometer.js" language="JavaScript"></script>
+    <script src="particles.js" language="JavaScript"></script>
+    <script src="clock.js" language="JavaScript"></script>
+    <script src="vslider.js" language="JavaScript"></script>
+
+</head>
+
+<body>
+
+<div class="topnav">
+    <a href="Home.html" >Home</a>
+    <a href="Malting.html">Malting</a>
+    <a href="Mashing.html">Mashing</a>
+    <a href="Boiling.html" class="active">Boiling & Hopping</a>
+    <a href="Fermenting.html">Fermenting</a>
+    <a href="Bottling.html">Bottling & Carbonation</a>
+
+</div>
+
+<h1>Boiling & Hopping</h1>
+
+
+<div class="row">
+    <div class="thermo">
+        <svg id="tempslider" width="100" height="350"></svg>
+        <script> /*drawthermo(0); changeTemp(10, 75, 110);*/  </script>
+        <p id="alert" style="color: white; font-size: 19px"> The temperature needs to be higher! </p>
+    </div>
+    <!--<div class="clock">
+        <script> renderClock(); </script>
+    </div>-->
+    <div class="partdiv3" id = "hops">
+        <script> renderbitterhops(120) </script>
+    </div>
+    <div class="partdiv4">
+    </div>
+    <div class="partdiv5">
+    </div>
+    <div class="viz"><svg id="fillgauge3" width="400px" height="400px" opacity="0.75" ></svg>
+        <script>
+            var config3 = liquidFillGaugeDefaultSettings();
+            config3.waveRiseTime =  1;
+            var gauge3 = loadLiquidFillGauge("fillgauge3", 0, config3);
+            changeColor(10);
+            gauge3.update(45);
+        </script>
+    </div>
+
+    <div class="text">
+        <p id="first">In the third step, the wort collected from mashing has to be <b>boiled</b>. The wort is boiled for about an hour
+            while hops and other spices are added several times. <br><br>
+
+            <b>Hops</b> are the small, green cone-like fruit of a vine plant. Initially used as preservatives, they provide bitterness to balance
+            out all the sugar in the wort and provide flavor. Before you can start boiling,
+            <a id="bhops" onclick="addHops(); rendertemp(2, 0, 0); this.onclick=null;">add bittering hops here</a>. <br> </p>
+
+        <p id="setboil" style="color: white"> <!--Now, <a onclick="clearDiv('hops'); renderbitterhops(5); changeTemp(8000, 47, 138); this.onclick=null;">start boiling</a>.
+            Notice the temperature go up to a toasty 212F. Boiling is generally done for a little more than an hour. -->
+            Drag the temperature on the thermometer up to around 212F to start boiling. Boiling is generally done for a little
+            more than an hour. <br> </p>
+
+        <p id="next" style="color: white">  Flavoring and aroma hops add a crisp hoppy flavor and aroma to the wort.
+            They are generally added towards the end of the boiling process. <br>
+            Add <a id="fhops" style="color: white" onclick="renderflavorhops(5); this.onclick=null;">flavor hops</a> and
+
+            <a id="ahops" style="color: white" onclick="renderaromahops(5); this.onclick=null;"> aroma hops</a> to your boil. <br><br>
+
+            Next up, fermentation! Let's get yeasty! </p>
+    </div>
+
+</div>
+
+
+
+<!--<button onclick="setInterval(gauge3.update(10), 1000); setTimeout(gauge3.update(80), 6000); this.onclick=null;"> Boil </button>-->
+
+<div class="row" id="nav">
+    <button class="button" ><a href="Mashing.html"> Previous: Mashing </a></button>
+    <button class="button" ><a href="Fermenting.html"> Next: Fermenting </a></button>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8" language="JavaScript"></script>
+    <script src="liquidFillGauge.js" language="JavaScript"></script>
+    <script src="thermometer.js" language="JavaScript"></script>
+    <script src="particles.js" language="JavaScript"></script>
+    <script src="carbonation.js" language="JavaScript"></script>
+</head>
+
+<body>
+
+<div class="topnav">
+    <a href="Home.html" >Home</a>
+    <a href="Malting.html">Malting</a>
+    <a href="Mashing.html">Mashing</a>
+    <a href="Boiling.html">Boiling & Hopping</a>
+    <a href="Fermenting.html">Fermenting</a>
+    <a href="Bottling.html" class="active">Bottling & Carbonation</a>
+
+
+</div>
+
+<h1>Bottling & Carbonation</h1>
+
+<div class="row">
+    <div class="bottling1" >
+        <img src="bottlinganimated.gif">
+    </div>
+    <div class="text3"> <p> At the end of fermentation, we now have alcoholic beer, but it is still flat and uncarbonated. <br> <br>
+
+        This beer is then bottled, as shown on the left. <br> <br>
+
+        While being bottled, it is carbonated, as shown on the right.
+
+        It is either artificially carbonated like a soda, or ‘bottle conditioned’, where it’s allowed to naturally carbonate
+        via the carbon dioxide the yeast produces. <br> <br>
+
+        After allowing it to age for anywhere from a few weeks to a few months, the beer is ready for the final step! </p>
+    </div>
+    <div class="bottling2">
+        <div class="bottle1" id="bottle1"></div>
+        <div class="bottle2" id="bottle2"></div>
+        <div class="bottle3" id="bottle3"></div>
+        <script> carbonate();</script>
+    </div>
+
+
+</div>
+
+<div class="row" id="nav">
+    <button class="button" > <a href="Fermenting.html"> Previous: Fermenting</a> </button>
+    <button class="button" ><a href="End.html"> Final Step </a> </button>
+</div>
+
+
+
+</body>
+</html>

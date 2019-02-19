@@ -1,0 +1,98 @@
+.timeline-date {
+    font-family: "montserrat-medium", sans-serif;
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+.timeline-subheading {
+    font-family: "montserrat-medium", sans-serif;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: .1rem;
+}
+
+.timeline-description {
+    font-family: "montserrat-regular", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+#contact {
+    background-color: #2f0f1d;
+    display: block;
+    margin: auto;
+}
+
+.centre-buttons {
+    padding-top: 4rem;
+    text-align: left;
+}
+
+.centre-buttons .btn {
+    width: 215px;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    /*margin: 4rem 4rem 0 0;*/
+    letter-spacing: .25rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.centre-buttons .btn:hover,
+.centre-buttons .btn:focus {
+    background: #FFFFFF !important;
+    color: #000000;
+}
+
+.centre {
+    margin: 0 auto;
+    display: block;
+}
+
+
+.centre .btn:hover,
+.centre .btn:focus {
+    background: #FFFFFF !important;
+    color: #000000;
+}
+.horizontal{
+    width: 100%
+}
+
+.l-rk {
+    width:35%;
+    float: left;
+    height:auto;
+    margin: auto;
+}
+
+.r-rk {
+    width:65%;
+    float: left;
+    height:auto;
+    margin:auto;
+    padding-left: 10%;
+}
+
+.gallery-l {
+    width:45%;
+    float: left;
+    height:auto;
+    margin: auto;
+}
+
+.gallery-l img,
+.gallery-r img {
+    max-height: 400px;
+}
+.gallery-r {
+    width:50%;
+    float: left;
+    height:auto;
+    margin:auto;
+    padding-left: 5%;
+}
+

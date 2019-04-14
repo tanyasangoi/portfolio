@@ -327,10 +327,6 @@ p{
     .overview-left {
         margin-bottom: 2%;
     }
-    .btn {
-        margin-left:0;
-        margin-right:0;
-    }
     .get-to-know-me {
         clear:both;
         width:100%;
@@ -383,12 +379,6 @@ p{
         padding-left: 0.5% !important;
         padding-right:0.5% !important;
     }
-    .btn {
-        clear:both;
-        width:90%;
-        margin: 0 auto;
-        margin-bottom: 5%;
-    }
     .btn-container {
         padding-right: 0;
     }    
@@ -403,6 +393,18 @@ p{
         display:block;
     }
 }
+
+@media screen and (max-width: 550px) {
+    .btn {
+        clear:both;
+        width:90%;
+        margin-left:0;
+        margin-right:0;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+}
+
 
 .overview-header {
     margin-left: 0;

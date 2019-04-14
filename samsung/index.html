@@ -20,21 +20,28 @@
 
     <!-- CSS
     ================================================== -->
-    <link href="css/agency.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="../css/agency.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/vendor.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="../css/custom.css" rel="stylesheet">
+    
+    <style>
+        .home-content__scroll a::before {
+            border-bottom: 2px solid #000;
+            border-right: 2px solid #000;
+        }
+    </style>
 
     <!-- script
     ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
+    <script src="../js/modernizr.js"></script>
+    <script src="../js/pace.min.js"></script>
 
     <!-- favicons
     ================================================== -->
-    <link rel="shortcut icon" href="images/stars.png" type="image/x-icon">
-    <link rel="icon" href="images/stars.png" type="image/x-icon">
+    <link rel="shortcut icon" href="http://d108hfdi4lp0l9.cloudfront.net/images/stars.png" type="image/x-icon">
+    <link rel="icon" href="http://d108hfdi4lp0l9.cloudfront.net/images/stars.png" type="image/x-icon">
 
 </head>
 
@@ -52,17 +59,35 @@
     <!--</div>-->
 
     <div class='sticky-nav'>
-        <div>
-            <a href='index.html' class='logo'>
-                <img src="logos/Logo2.png" alt="Homepage" style='height: 100%;'>
+        <div class='nav-logo'>
+            <a href='/' class='logo'>
+                <img src="http://d108hfdi4lp0l9.cloudfront.net/logos/Logo2.png" alt="Homepage" style='height: 100%;'>
             </a>
-            <a href='index.html#contact'>Contact</a>
-            <a href='index.html#resume'>Resume</a>
-            <a href='index.html#works'>Work</a>
-            <a href='index.html#about'>About</a>
+        </div>
+        <div class='nav-links'>
+            <a href='../index.html#home'>Home</a>
+            <a href='../index.html#contact'>Contact</a>
+            <a href='../index.html#works'>Work</a>
+            <a href='../index.html#about'>About</a>
         </div>
     </div>
 
+    <div class='mobile-nav'>
+        <div class='nav-logo'>
+            <a href='/' class='logo'>
+                <img src="http://d108hfdi4lp0l9.cloudfront.net/logos/Logo2.png" alt="Homepage">
+            </a>
+        </div>
+        <div class='mobile-nav-links'>
+            <a href='../index.html#home'>Home</a>
+            <a href='../index.html#contact'>Contact</a>
+            <a href='../index.html#works'>Work</a>
+            <a href='../index.html#about'>About</a>
+        </div>
+        <a class='mobile-nav-icon' href='javascript:void(0)' style="height: auto">
+            <i class='fa fa-bars'></i>
+        </a>
+    </div>
     <!--<nav class="header-nav">-->
 
     <!--<a href="#0" class="header-nav__close" title="close"><span>Close</span></a>-->
@@ -106,8 +131,13 @@
 
 <!-- home
 ================================================== -->
-<section id="home" style="background: url('images/Samsung_banner.png') no-repeat center center !important;
+<section id="home" style="background: url('http://d108hfdi4lp0l9.cloudfront.net/images/Samsung_banner.png') no-repeat center center !important;
     background-size: cover !important; padding-top: 0 !important" class="s-home target-section" data-parallax="scroll" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <div class="home-content__scroll" style='bottom:3rem'>
+        <a href="#content" class="scroll-link smoothscroll">
+            <span style='color:black' class='scroll-down-text'>Scroll Down</span>
+        </a>
+    </div>
 <!--<section id="home" style="background-color: white; padding-top: 0 !important" class="s-home target-section" data-parallax="scroll" data-natural-width=3000 data-natural-height=2000 data-position-y=center>-->
 <!--
     <div style='position: absolute; top: 0; left: 0; width:100%; height:100%; padding-top:100px; margin: 0'>
@@ -172,11 +202,11 @@
 
     
 <section id='content' style='background-color: white'>
-    <div style='width: 60%; height: auto; margin: 0 auto;'>
+    <div class='condenser-overview'>
         <div class="row horizontal" data-aos="fade-up">
-            <h3 class="subhead" align='left' style='margin-left: 0; color:black; font-size: 3.5rem'>Samsung</h3>
+            <h3 class="subhead overview-header" align='left'>Samsung</h3>
             <br/>
-            <div style='float:left; width:20%'>
+            <div class='overview-left'>
                 <p class='details-header'>Role:</p>
                 <p class='details-content'>UX Intern</p>
                 
@@ -184,9 +214,9 @@
                 <p class='details-content'>4 months</p>
             </div>
 
-            <div style='float:left; width: 80%'>
+            <div class='overview-right'>
                 <div class="horizontal">
-                        <p style='color:black; font-size: 2rem'>
+                        <p style='color:black;' class='overview-text'>
                             As a UX Intern at <a href='https://www.samsung.com/us/' target="_blank">Samsung</a>, I worked with the e-Commerce Team to design great shopping experiences. I worked across the breadth of the UX spectrum ranging from User Research to Design.
                             <br/>
                             In addition, I also helped devise the content strategy for the customer facing emails and the website.
@@ -198,13 +228,13 @@
         
         <br/>
     </div>
-    <div class="row section-header" style='margin: 0 auto; padding-left: 0;'>
+    <div class="row section-header btn-container">
             <div class="centre" align='center'>
-                <a href='#work' class="btn btn--stroke-whitebg">
-                    Work
+                <a href='#projects' class="btn btn--stroke-whitebg">
+                    Projects
                 </a>
-                <a href="#gallery" class="btn btn--stroke-whitebg">
-                    Gallery
+                <a href="#experience" class="btn btn--stroke-whitebg">
+                    Experience
                 </a>
 
                 <a href="#testimonials" class="btn btn--stroke-whitebg">
@@ -214,28 +244,28 @@
     </div>
 </section>
     
-<section id='work' class='s-work' style='background-color:black'>
+<section id='projects' class='s-work' style='background-color:black'>
     <div class='condenser-gallery'>
         <div class="row section-header" data-aos="fade-up" style='margin-left: 0;'>
-            <h3 class="subhead" align='left' style='margin-left: 0; color:gray;'>Work</h3>
+            <h3 class="subhead" align='left' style='margin-left: 0; color:gray;'>Projects</h3>
         </div>
-        <div class="row works-content" style='margin-top: auto'>
-            <div class="col-full masonry-wrap">
+        <div class="row works-content full-works" style='margin-top: auto'>
+            <div class="col-full masonry-wrap full-masonry">
                 <div class="masonry">
                     <div class="masonry__brick" data-aos="fade-up"> <!-- begin masonry__brick -->
                         <div class="item-folio">
                             <div class="item-folio__thumb">
-                                <a href="job_samsung.html" class="thumb-link" title="Samsung" data-size="1050x700">
-                                    <img src="images/SamsungOffers.png"
-                                         srcset="images/SamsungOffers.png 1x, images/SamsungOffers.png 2x" alt="">
+                                <a href="../login/" class="thumb-link" title="Samsung" islink='1' data-size="1050x700">
+                                    <img src="http://d108hfdi4lp0l9.cloudfront.net/images/SamsungOffers.png"
+                                         srcset="http://d108hfdi4lp0l9.cloudfront.net/images/SamsungOffers.png 1x, http://d108hfdi4lp0l9.cloudfront.net/images/SamsungOffers.png 2x" alt="">
                                 </a>
                             </div>
                             <div class="item-folio__text">
                                 <h3 class="item-folio__title">
-                                    Samsung
+                                    Samsung Offers
                                 </h3>
                                 <p class="item-folio__cat">
-                                    UX Intern | UX Design, Research, Content Writing
+                                    UX Design
                                 </p>
                             </div>
                         </div>
@@ -243,17 +273,17 @@
                         <div class="masonry__brick" data-aos="fade-up"> <!-- begin masonry__brick -->
                         <div class="item-folio">
                             <div class="item-folio__thumb">
-                                <a href="job_samsung.html" class="thumb-link" title="Samsung" data-size="1050x700">
-                                    <img src="images/Support_Samsung.png"
-                                         srcset="images/Support_Samsung.png 1x, images/Support_Samsung.png 2x" alt="">
+                                <a href="../login/" class="thumb-link" title="Samsung" islink='1' data-size="1050x700">
+                                    <img src="http://d108hfdi4lp0l9.cloudfront.net/images/Support_Samsung.png"
+                                         srcset="http://d108hfdi4lp0l9.cloudfront.net/images/Support_Samsung.png 1x, http://d108hfdi4lp0l9.cloudfront.net/images/Support_Samsung.png 2x" alt="">
                                 </a>
                             </div>
                             <div class="item-folio__text">
                                 <h3 class="item-folio__title">
-                                    Samsung
+                                    Samsung Support
                                 </h3>
                                 <p class="item-folio__cat">
-                                    UX Intern | UX Design, Research, Content Writing
+                                    UX Design & Research
                                 </p>
                             </div>
                         </div>
@@ -262,16 +292,16 @@
                         <div class="item-folio">
                             <div class="item-folio__thumb">
                                 <a href="job_samsung.html" class="thumb-link" title="Samsung" data-size="1050x700">
-                                    <img src="images/conteny%203.png"
-                                         srcset="images/conteny%203.png 1x, images/conteny%203.png 2x" alt="">
+                                    <img src="http://d108hfdi4lp0l9.cloudfront.net/images/conteny%203.png"
+                                         srcset="http://d108hfdi4lp0l9.cloudfront.net/images/conteny%203.png 1x, http://d108hfdi4lp0l9.cloudfront.net/images/conteny%203.png 2x" alt="">
                                 </a>
                             </div>
                             <div class="item-folio__text">
                                 <h3 class="item-folio__title">
-                                    Samsung
+                                    Samsung Trade-In
                                 </h3>
                                 <p class="item-folio__cat">
-                                    UX Intern | UX Design, Research, Content Writing
+                                    Content Writing
                                 </p>
                             </div>
                         </div>
@@ -282,10 +312,10 @@
     </div>
 </section>
     
-<section id="gallery" class="s-gallery" style='background-color: white;'>
+<section id="experience" class="s-gallery" style='background-color: white;'>
     <div class='condenser-gallery'>
         <div class="row section-header" data-aos="fade-up" style='margin-left: 0;'>
-            <h3 class="subhead" align='left' style='margin-left: 0; color:gray;'>Gallery</h3>
+            <h3 class="subhead" align='left' style='margin-left: 0; color:gray;'>Experience</h3>
         </div>
         
 
@@ -293,11 +323,11 @@
 
             <div class="horizontal">
                 <div class = "gallery-l">
-                    <img src="images/samsung_4.JPG">
+                    <img src="http://d108hfdi4lp0l9.cloudfront.net/images/samsung_4.JPG">
                 </div>
 
                 <div class = "gallery-r">
-                    <p style="float: left; color: black" class='condenser-text'>
+                    <p style="color: black" class='condenser-text'>
                         Meet my team!
                         <br/>
                         I had the chance to work with some talented designers having a diverse skill set ranging from graphic design to interaction design.
@@ -310,11 +340,11 @@
 
             <div class="horizontal">
                 <div class = "gallery-l">
-                    <img src="images/samsung_2.JPG">
+                    <img src="http://d108hfdi4lp0l9.cloudfront.net/images/samsung_2.JPG">
                 </div>
 
                 <div class = "gallery-r">
-                    <p style="float: left; color: black" class='condenser-text'>
+                    <p style="color: black" class='condenser-text'>
                         We had regular stand-ups and design reviews to discuss the progress of our projects and provide creative feedback for each other's work.
                     </p>
                 </div>
@@ -325,11 +355,11 @@
 
             <div class="horizontal">
                 <div class = "gallery-l">
-                    <img src="images/samsung_5.JPG">
+                    <img src="http://d108hfdi4lp0l9.cloudfront.net/images/samsung_5.JPG">
                 </div>
 
                 <div class = "gallery-r">
-                    <p style="float: left; color: black"  class='condenser-text'>
+                    <p style="color: black" class='condenser-text'>
                         This is me creating an affinity map of some user testing results.
                         <br/>
                         I helped my team in different stages of the design process along with research and testing.
@@ -344,11 +374,11 @@
 
             <div class="horizontal">
                 <div class = "gallery-l">
-                    <img src="images/samsung_3.JPG">
+                    <img src="http://d108hfdi4lp0l9.cloudfront.net/images/samsung_3.JPG">
                 </div>
 
                 <div class = "gallery-r">
-                    <p style="float: left; color: black"  class='condenser-text'>
+                    <p style="color: black"  class='condenser-text'>
                         For a newly assembled team, breaking the ice was a crucial first step to becoming an efficient and effective design team. 
                         <br/>
                         As an intern, I took the initiative to organize various team-building events such as the UX Social which helped us get to know each other better.
@@ -525,24 +555,15 @@
 
 <!-- Java Script
 ================================================== -->
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<script src="http://d108hfdi4lp0l9.cloudfront.net/js/jquery-3.2.1.min.js"></script>
+<script src="http://d108hfdi4lp0l9.cloudfront.net/js/plugins.js"></script>
+<script src="http://d108hfdi4lp0l9.cloudfront.net/js/main.js"></script>
 <script>
-    
-//    $(document).ready(function() {
-//        while(true) {
-//            if (prompt('Please enter password to proceed.') != 'samsung123') {
-//                alert('Incorrect password.');
-//                window.location.href = 'index.html';
-//                break;
-//            } else {
-//                break;
-//            }
-//        }
-//
-//    });
-   
+    $(document).ready(function() {
+       $('.mobile-nav-icon').click(function() {
+          $('.mobile-nav-links').css('display', $('.mobile-nav-links').css('display') == 'block' ? 'none' : 'block');
+       });
+    });
 </script>
 
 </body>

@@ -20,7 +20,7 @@
 
     <!-- CSS
     ================================================== -->
-    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/agency.css" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
@@ -44,50 +44,61 @@
     ================================================== -->
     <header class="s-header">
 
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-              <img src="logos/Logo2.png" alt="Homepage" style='max-width: 250%;'>
-<!--                <object data="images/logos/Logo2.svg" type="image/svg+xml"></object>-->
-            </a>
+        <!--<div class="header-logo">-->
+            <!--<a class="site-logo" href="index.html">-->
+              <!--<img src="logos/Logo2.png" alt="Homepage" style='max-width: 250%;'>-->
+            <!--</a>-->
+        <!--</div>-->
+
+        <div class='sticky-nav'>
+            <div>
+                <a href='index.html' class='logo'>
+                    <img src="logos/Logo2.png" alt="Homepage" style='height: 100%;'>
+                </a>
+                <a href='index.html#contact'>Contact</a>
+                <!--<a href='index.html#resume'>Resume</a>-->
+                <a href='index.html#works'>Work</a>
+                <a href='index.html#about'>About</a>
+            </div>
         </div>
 
-        <nav class="header-nav">
+        <!--<nav class="header-nav">-->
 
-            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+            <!--<a href="#0" class="header-nav__close" title="close"><span>Close</span></a>-->
 
-            <div class="header-nav__content">
-                <h3>Navigation</h3>
-                
-                <ul class="header-nav__list">
-                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                    <li><a class="smoothscroll"  href="#work" title="work">Work</a></li>
-                    <li><a class="smoothscroll"  href="#resume" title="resume">Resume</a></li>
-                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
-                </ul>
+            <!--<div class="header-nav__content">-->
+                <!--<h3>Navigation</h3>-->
+                <!---->
+                <!--<ul class="header-nav__list">-->
+                    <!--<li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>-->
+                    <!--<li><a class="smoothscroll"  href="#about" title="about">About</a></li>-->
+                    <!--<li><a class="smoothscroll"  href="#work" title="work">Work</a></li>-->
+                    <!--<li><a class="smoothscroll"  href="#resume" title="resume">Resume</a></li>-->
+                    <!--<li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>-->
+                <!--</ul>-->
 
-                <ul class="header-nav__social">
-                    <li>
-                        <a href="https://www.linkedin.com/in/tanyasangoi/" target='_blank'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    </li>
+                <!--<ul class="header-nav__social">-->
+                    <!--<li>-->
+                        <!--<a href="https://www.linkedin.com/in/tanyasangoi/" target='_blank'><i class="fa fa-linkedin" aria-hidden="true"></i></a>-->
+                    <!--</li>-->
 
-                    <li>
-                        <a href='https://github.com/tanyasangoi/' target='_blank'><i class="fa fa-github" aria-hidden="true"></i></a>
-                    </li>
+                    <!--<li>-->
+                        <!--<a href='https://github.com/tanyasangoi/' target='_blank'><i class="fa fa-github" aria-hidden="true"></i></a>-->
+                    <!--</li>-->
 
-                    <li>
-                        <a href="https://www.instagram.com/tanya_sangoi/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
+                    <!--<li>-->
+                        <!--<a href="https://www.instagram.com/tanya_sangoi/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>-->
+                    <!--</li>-->
+                <!--</ul>-->
 
-            </div> <!-- end header-nav__content -->
+            <!--</div> &lt;!&ndash; end header-nav__content &ndash;&gt;-->
 
-        </nav>  <!-- end header-nav -->
+        <!--</nav>  &lt;!&ndash; end header-nav &ndash;&gt;-->
 
-        <a class="header-menu-toggle" href="#0">
-            <span class="header-menu-text">Menu</span>
-            <span class="header-menu-icon"></span>
-        </a>
+        <!--<a class="header-menu-toggle" href="#0">-->
+            <!--<span class="header-menu-text">Menu</span>-->
+            <!--<span class="header-menu-icon"></span>-->
+        <!--</a>-->
 
     </header> <!-- end s-header -->
 
@@ -96,7 +107,7 @@
     ================================================== -->
     <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/header-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
-        <div class="overlay"></div>
+        <div class="overlay" style='opacity: 0.5'></div>
         <div class="shadow-overlay"></div>
 
         <div class="home-content">
@@ -133,6 +144,23 @@
 
         </div> <!-- end home-content -->
 
+        <ul class="home-social">
+
+            <li>
+            <a href="https://www.linkedin.com/in/tanyasangoi/" target='_blank'><i class="fa fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+            </li>
+
+            <li>
+            <a href='https://github.com/tanyasangoi/' target='_blank'><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+            </li>
+
+            <li>
+            <a href="https://www.instagram.com/tanya_sangoi/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+        </ul>
+        <!-- end home-social -->
+
+
         <!-- end home-social -->
 
     </section> <!-- end s-home -->
@@ -144,13 +172,13 @@
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead">Hello There</h3>
-                <h1 class="display-1 display-1--light">Get to know me better </h1>
+                <h1 class="display-1 display-1--light" style="color: #3a6893">Get to know me better </h1>
             </div>
         </div> <!-- end section-header -->
 
         <div class="row about-desc" data-aos="fade-up">
-            <div class="col-full">
-                <p style='color:white;'>
+            <div style="background-color: rgba(0, 0, 0, 0.8); margin-right: 0; float: right; width: 75%">
+                <p style='color:white; font-size: 2.3rem; padding: 5%'>
                 I am a graduate student at the University of Washington, studying User Experience Design & Information Architecture.
                     <br><br>
                 The words of Pierre Reverdy, "Creativity is to think more efficiently" echo my design philosophy and I believe that great design should be clean, effortless and colorful.
@@ -204,8 +232,8 @@
         <div class="row works-content">
             <div class="col-full masonry-wrap">
                 <div class="masonry">
-
-                    <div class="masonry__brick" data-aos="fade-up"> <!-- begin masonry__brick -->
+                    
+                    <div class="masonry__brick" data-aos="fade-up">
 
                         <div class="item-folio">
 
@@ -214,6 +242,7 @@
                                 <a href="job_samsung.html" class="thumb-link" title="Samsung" data-size="1050x700">
                                     <img src="images/samsung_logo.png"
                                          srcset="images/samsung_logo.png 1x, images/samsung_logo.png 2x" alt="">
+                                </a>
 
                             </div>
 
@@ -228,58 +257,8 @@
 
                         </div>
 
-                    </div> <!-- end masonry__brick -->
-
-                    <div class="masonry__brick" data-aos="fade-up"> <!-- begin masonry__brick -->
-
-                        <div class="item-folio">
-
-
-                            <div class="item-folio__thumb">
-                                <a href="#" class="thumb-link" title="Capstone" data-size="1050x700">
-                                    <img src="images/capstone.png"
-                                         srcset="images/capstone.png 1x, images/capstone.png 2x" alt="">
-
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Project ALIVE
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Capstone | Mixed Reality
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div> <!-- end masonry__brick -->
-
-                    <div class="masonry__brick" data-aos="fade-up"> <!-- begin masonry__brick -->
-
-                        <div class="item-folio">
-
-
-                            <div class="item-folio__thumb">
-                                <a href="#" class="thumb-link" title="" data-size="1050x700">
-                                    <img src="images/cvm.png"
-                                         srcset="images/cvm.png 1x, images/cvm.png 2x" alt="">
-
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Contraceptive Vending Machines in India
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Academic Project | Product Design, Localization Research
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div> <!-- end masonry__brick -->
-
+                    </div>
+                    
                     <div class="masonry__brick" data-aos="fade-up"> <!-- begin masonry__brick -->
 
                         <div class="item-folio">
@@ -289,6 +268,7 @@
                                 <a href="job_wally.html" class="thumb-link" title="Wally" data-size="1050x700">
                                     <img src="images/wally_logo.png"
                                          srcset="images/wally_logo.png 1x, images/wally_logo.png 2x" alt="">
+                                </a>
 
                             </div>
 
@@ -303,17 +283,17 @@
 
                         </div>
 
-                    </div> <!-- end masonry__brick -->
-
-                    <div class="masonry__brick" data-aos="fade-up"> <!-- begin masonry__brick -->
+                    </div>
+                <div class="masonry__brick" data-aos="fade-up">
 
                         <div class="item-folio">
 
 
                             <div class="item-folio__thumb">
-                                <a href="#" class="thumb-link" title="Capstone" data-size="1050x700">
+                                <a href="hack_nasa.html" class="thumb-link" title="NASA" data-size="1050x700">
                                     <img src="images/nasa_logo.png"
                                          srcset="images/nasa_logo.png 1x, images/nasa_logo.png 2x" alt="">
+                                </a>
 
                             </div>
 
@@ -328,17 +308,102 @@
 
                         </div>
 
-                    </div> <!-- end masonry__brick -->
-
-                    <div class="masonry__brick" data-aos="fade-up"> <!-- begin masonry__brick -->
+                    </div>
+                
+                    
+                    <div class="masonry__brick" data-aos="fade-up"> 
 
                         <div class="item-folio">
 
 
                             <div class="item-folio__thumb">
-                                <a href="job_ideathon.html" class="thumb-link" title="Capstone" data-size="1050x700">
+                                <a href="project_foodie.html" class="thumb-link" title="Capstone" data-size="1050x700">
+                                    <img src="images/foodie2.png"
+                                         srcset="images/foodie2.png 1x, images/foodie2.png 2x" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title" >
+                                    Foodie Fanatic
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Academic | Information Architecture
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div> 
+
+<!--
+                    <div class="masonry__brick" data-aos="fade-up"> 
+
+                        <div class="item-folio">
+
+
+                            <div class="item-folio__thumb">
+                                <a href="project_capstone.html" class="thumb-link" title="Capstone" data-size="1050x700">
+                                    <img src="images/capstone.png"
+                                         srcset="images/capstone.png 1x, images/capstone.png 2x" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Project ALIVE
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Capstone | Mixed Reality
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div> 
+-->
+
+<!--
+                    <div class="masonry__brick" data-aos="fade-up"> 
+
+                        <div class="item-folio">
+
+
+                            <div class="item-folio__thumb">
+                                <a href="project_cvm.html" class="thumb-link" title="CVM" data-size="1050x700">
+                                    <img src="images/cvm.png"
+                                         srcset="images/cvm.png 1x, images/cvm.png 2x" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Contraceptive Vending Machines in India
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Academic Project | Product Design, Localization Research
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+-->
+
+<!--
+                    <div class="masonry__brick" data-aos="fade-up"> 
+
+                        <div class="item-folio">
+
+
+                            <div class="item-folio__thumb">
+                                <a href="hack_ideathon.html" class="thumb-link" title="Capstone" data-size="1050x700">
                                     <img src="images/ideathon.png"
                                          srcset="images/ideathon.png 1x, images/ideathon.png 2x" alt="">
+                                </a>
 
                             </div>
 
@@ -353,18 +418,21 @@
 
                         </div>
 
-                    </div> <!-- end masonry__brick -->
+                    </div> 
+-->
 
 
-                    <div class="masonry__brick" data-aos="fade-up"> <!-- begin masonry__brick -->
+<!--
+                    <div class="masonry__brick" data-aos="fade-up"> 
 
                         <div class="item-folio">
 
 
                             <div class="item-folio__thumb">
-                                <a href="project-beer.html" class="thumb-link" title="Brew Master" data-size="1050x700">
+                                <a href="project_beer.html" class="thumb-link" title="Brew Master" data-size="1050x700">
                                     <img src="images/brewmaster.png"
                                          srcset="images/brewmaster.png 1x, images/brewmaster.png 2x" alt="">
+                                </a>
 
                             </div>
 
@@ -379,12 +447,14 @@
     
                         </div>
 
-                    </div> <!-- end masonry__brick -->
+                    </div> 
+-->
 
 
 
 
-                    <div class="masonry__brick" data-aos="fade-up"> <!-- begin masonry__brick -->
+<!--
+                    <div class="masonry__brick" data-aos="fade-up"> 
 
                         <div class="item-folio">
 
@@ -393,6 +463,7 @@
                                 <a href="job_research.html" class="thumb-link" title="Research" data-size="1050x700">
                                     <img src="images/"
                                          srcset="images/research_logo.png 1x, images/research_logo.png 2x" alt="">
+                                </a>
 
                             </div>
 
@@ -407,7 +478,8 @@
 
                         </div>
 
-                    </div> <!-- end masonry__brick -->
+                    </div> 
+-->
 
 
 
@@ -418,90 +490,116 @@
         </div> <!-- end works-content -->
 
     </section> <!-- end s-works -->
-    
-    <section id='resume' class='s-resume'>
-        <div class="container">
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Resume</h3>
-                <div class="centre" style="padding-top:3%">
-                    <a href="TS_Resume_4_5.pdf"  download='resume.pdf' onclick="window.open('TS_Resume_4_5.pdf')" class="smoothscroll btn btn--stroke">
-                        Download Resume
-                    </a>
-                </div>
-            </div>
-        </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="timeline">
-            <li>
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="images/magicleap_logo.png" style="width: available" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4 class='timeline-date'>2009-2011</h4>
-                  <h4 class="timeline-subheading">Our Humble Beginnings</h4>
-                </div>
-                <div class="timeline-description">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4 class="timeline-date">March 2011</h4>
-                  <h4 class="timeline-subheading">An Agency is Born</h4>
-                </div>
-                <div class="timeline-description">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4 class="timeline-date">December 2012</h4>
-                  <h4 class="timeline-subheading">Transition to Full Service</h4>
-                </div>
-                <div class="timeline-description">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4 class="timeline-date">July 2014</h4>
-                  <h4 class="timeline-heading">Phase Two Expansion</h4>
-                </div>
-                <div class="timeline-description">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <h4>Be Part
-                  <br>Of Our
-                  <br>Story!</h4>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    </section>
+
+
+    <!-- resume
+    ================================================== -->
+
+    <!--<section id='resume' class='s-resume'>-->
+        <!--<div class="container">-->
+            <!--<div class="row section-header" data-aos="fade-up">-->
+                <!--<div class="col-full">-->
+                    <!--<h3 class="subhead">Resume</h3>-->
+                    <!--<div class="centre" style="padding-top:3%">-->
+                        <!--<a href="TS_Resume_4_5.pdf"  download='resume.pdf' onclick="window.open('TS_Resume_4_5.pdf')" class="smoothscroll btn btn&#45;&#45;stroke">-->
+                            <!--Download Resume-->
+                        <!--</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+                <!--<div class="col-lg-12">-->
+                    <!--<ul class="timeline">-->
+                        <!--<li class="timeline-inverted">-->
+                            <!--<div class="timeline-image">-->
+                                <!--<h4>Your<br/>Company? </h4>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<div class="timeline-image">-->
+                                <!--<img class="rounded-circle img-fluid" src="images/magicleap_logo.png" style="width: available" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="timeline-panel">-->
+                                <!--<div class="timeline-heading">-->
+                                    <!--<h4 class='timeline-date'>Janunary 2019 - Present</h4>-->
+                                    <!--<h4 class="timeline-company">Magic Leap</h4>-->
+                                    <!--<h4 class="timeline-subheading">UX Designer & Developer</h4>-->
+
+                                <!--</div>-->
+                                <!--<div class="timeline-description">-->
+                                    <!--<p>Designing an interactive AR museum exhibit for the Pacific Science Centre using the Magic Leap One Headset</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                        <!--<li class="timeline-inverted">-->
+                            <!--<div class="timeline-image">-->
+                                <!--<img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="timeline-panel">-->
+                                <!--<div class="timeline-heading">-->
+                                    <!--<h4 class="timeline-date">November 2018 - February 2019</h4>-->
+                                    <!--<h4 class="timeline-company">Samsung</h4>-->
+                                    <!--<h4 class="timeline-subheading">UX Intern</h4>-->
+                                <!--</div>-->
+                                <!--<div class="timeline-description">-->
+                                    <!--<p class="text-muted">Incorporated user research feedback from to craft great experiences with the Samsung e-commerce team. <br/>Helped with both content writing and designing of the Samsung e-commerce website and Samsung Support</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<div class="timeline-image">-->
+                                <!--<img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="timeline-panel">-->
+                                <!--<div class="timeline-heading">-->
+                                    <!--<h4 class="timeline-date">March 2018 - December 2018</h4>-->
+                                    <!--<h4 class="timeline-company">COSSAR Labs at Univerity of Washington</h4>-->
+                                    <!--<h4 class="timeline-subheading">Research Assistant</h4>-->
+                                <!--</div>-->
+                                <!--<div class="timeline-description">-->
+                                    <!--<p class="text-muted">Designed an information sharing system to relay critical information in times of traffic incidents between various stakeholders like the Police, Department of Transportation etc.<br/>Conducted qualitative research through interviews to understand the problem space and define user personas </p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                        <!--&lt;!&ndash;<li class="timeline-inverted">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="timeline-image timeline-end">&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="timeline-panel-1">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div class="timeline-heading">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<h4 class="timeline-date">June 2018 - August 2018</h4>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<h4 class="timeline-company">Wally</h4>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<h4 class="timeline-subheading">UX Design Intern</h4>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div class="timeline-description">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<p class="text-muted">Responsible for the dashboard redesign of Wally Pro, an IoT monitoring ecosystem for large residential complexes. <br/>Collaborated with engineers to redesign the mobile application&ndash;&gt;-->
+                                        <!--&lt;!&ndash;used for product installation to map to the user’s mental model</p>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                <!--&lt;!&ndash;&ndash;&gt;-->
+                      <!--&lt;!&ndash;&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                        <!--<li class="timeline-inverted timeline-end">-->
+                            <!--<div class="timeline-image">-->
+
+                            <!--</div>-->
+                            <!--<div class="timeline-panel">-->
+                                <!--<div class="timeline-heading">-->
+                                    <!--<h4 class="timeline-date">June 2018 - August 2018</h4>-->
+                                    <!--<h4 class="timeline-company">Wally</h4>-->
+                                    <!--<h4 class="timeline-subheading">UX Design Intern</h4>-->
+                                <!--</div>-->
+                                <!--<div class="timeline-description">-->
+                                    <!--<p class="text-muted">Responsible for the dashboard redesign of Wally Pro, an IoT monitoring ecosystem for large residential complexes. <br/>Collaborated with engineers to redesign the mobile application-->
+                                        <!--used for product installation to map to the user’s mental model</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section> &lt;!&ndash; end s-resume &ndash;&gt;-->
 
     <!-- contact
     ================================================== -->
@@ -510,25 +608,33 @@
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead">Contact</h3>
-                <h1 class="display-2 display-2--dark" style='color:#ffffff'>Reach out for a new project or just say hello</h1>
+                <h1 class="display-2 display-2--dark" style='color:#ffffff'>Reach out for a new project or just say hello</h1>  <br>
             </div>
 
+
             <div class="centre" >
+
+                <a href="TS_Resume_4_5.pdf"  download='resume.pdf' onclick="window.open('TS_Resume_4_5.pdf')" class="smoothscroll btn btn--stroke">
+                    Download Resume
+                </a>
+
                 <a href='mailto:tsangoi@uw.edu?subject=Hi Tanya&body=' class="btn btn--stroke">
                     Email Me
                 </a>
+
             </div>
+            <br>
             <h1 class="display-2 display-2--dark" style='color:#ffffff'>Or follow me here</h1>
             <ul class="contact-social">
 
                 <li>
-                    <a href="https://www.linkedin.com/in/tanyasangoi/" target='_blank'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/tanyasangoi/" target='_blank'><i class="fa fa-linkedin" style="font-size: 3.5rem" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/tanya_sangoi/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/tanya_sangoi/" target="_blank"><i class="fa fa-instagram" style="font-size: 3.5rem" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                    <a href='https://github.com/tanyasangoi/' target='_blank'><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href='https://github.com/tanyasangoi/' target='_blank'><i class="fa fa-github" style="font-size: 3.5rem" aria-hidden="true"></i></a>
                 </li>
 
             </ul> <!-- end contact-social -->
@@ -542,18 +648,18 @@
     ================================================== -->
     <footer>
 
-        <div class="row footer-main">
+        <!--<div class="row footer-main">-->
 
-           <!-- <div class="col-six tab-full left footer-desc">
+           <!--&lt;!&ndash; <div class="col-six tab-full left footer-desc">-->
 
-                <div class="footer-logo"></div>
-                Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.
+                <!--<div class="footer-logo"></div>-->
+                <!--Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.-->
 
-            </div>-->
+            <!--</div>&ndash;&gt;-->
 
 
 
-        </div> <!-- end footer-main -->
+        <!--</div> &lt;!&ndash; end footer-main &ndash;&gt;-->
 
         <div class="row footer-bottom">
 

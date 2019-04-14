@@ -139,7 +139,7 @@
                 $(this).on('click', function(e) {
                     e.preventDefault();
                     if ($(this).find('.thumb-link').attr('href').indexOf('html') != -1) {
-                        window.open($(this).find('.thumb-link').attr('href'), '_blank');
+                        window.open($(this).find('.thumb-link').attr('href'), '_self');
                     } else {
                         var options = {
                             index: i,

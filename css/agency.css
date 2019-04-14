@@ -56,7 +56,7 @@ section h3.section-subheading {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 100px 0;
   }
 }
 
@@ -406,6 +406,10 @@ header.masthead .intro-text .intro-heading {
   content: ' ';
 }
 
+.timeline-end > li:after, .timeline-end > li:before {
+  display: table;
+  content: none;
+}
 .timeline > li:after {
   clear: both;
 }
@@ -496,7 +500,7 @@ header.masthead .intro-text .intro-heading {
   }
   .timeline > li {
     min-height: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 25px; /* distance between the timeline blobs */
   }
   .timeline > li .timeline-panel {
     float: left;

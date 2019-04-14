@@ -55,7 +55,7 @@
 
 .centre .btn:hover,
 .centre .btn:focus {
-    background: #FFFFFF !important;
+    background: #FFFFFF;
     color: #000000;
 }
 .horizontal{
@@ -78,7 +78,7 @@
 }
 
 .gallery-l {
-    width:45%;
+    width:55%;
     float: left;
     height:auto;
     margin: auto;
@@ -89,10 +89,142 @@
     max-height: 400px;
 }
 .gallery-r {
-    width:50%;
+    width:40%;
     float: left;
     height:auto;
     margin:auto;
     padding-left: 5%;
 }
 
+.suggestions-container {
+    width: 100%;
+}
+div.suggestion {
+    float: left;
+    height:auto;
+    margin: auto;
+    padding: 0;
+}
+
+.suggestion img {
+    height: 300px;
+    width:100%;
+}
+
+.sticky-nav {
+    position:fixed;
+    top: 0;
+    width:100%;
+    background-blend-mode: overlay;
+    z-index: 99999;
+    padding: 0;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.sticky-nav a{
+    float: right;
+    display: block;
+    color: #FFFFFF;
+    text-align:center;
+    padding-top: calc(1.5% + 5px);
+    padding-left: 10px;
+    padding-right: 15px;
+    text-decoration: none;
+    font-family: "montserrat-medium", sans-serif;
+    font-size:1.5rem;
+    text-transform: uppercase;
+    z-index: 1000000;
+}
+
+.sticky-nav .logo{
+    padding-left: 2%;
+    padding-top: 1%;
+    float:left;
+    z-index: 1000000;
+}
+
+.sticky-nav img {
+    max-width: 300px;
+    max-height: 50px;
+}
+
+p{
+    font-family: "montserrat-regular", sans-serif;
+}
+
+
+.gallery-r p,
+.gallery-l p {
+    color:black;
+}
+
+.center-condensed {
+    margin: 0 auto;
+    width: 75%;
+}
+
+#about {
+    background: url('../images/profile1.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#contact{
+    background: rgba(0,0,0,0.7) url('../images/b1.jpg') no-repeat center center !important;
+    background-size: cover !important;
+}
+
+.footer-bottom {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+
+.btn--stroke-whitebg, button.btn--stroke-whitebg {
+    background: transparent !important;
+    border: 0.2rem solid #000000;
+    color: #000000;
+}
+
+.btn--stroke-whitebg:hover, button.btn--stroke-whitebg:hover {
+    border: 0.2rem solid #000000;
+    color: #FFFFFF !important;
+    background: black !important;
+}
+
+
+.details-header {
+    font-weight: bold;
+    margin-bottom: 0;
+    color: black;
+}
+
+.details-content {
+    color: gray;
+    margin-bottom: 1%;
+}
+
+.condenser {
+    width:60%;
+    margin: 0 auto;
+}
+
+.condenser-gallery {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.condenser-text {
+    font-size: 2rem;
+}
+
+.gallery-section {
+    margin-bottom: 4%;
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}

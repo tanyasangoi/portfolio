@@ -876,9 +876,27 @@ input[type="button"].btn--primary:focus {
     color: #FFFFFF;
 }
 
+.btn--stroke-whitebg, button.btn--stroke-whitebg {
+    background: transparent !important;
+    border: 0.2rem solid #000000;
+    color: #000000;
+}
+
 .btn--stroke:hover, button.btn--stroke:hover {
     border: 0.2rem solid #000000;
     color: #000000;
+}
+
+.btn--stroke-whitebg, button.btn--stroke-whitebg {
+    background: transparent !important;
+    border: 0.2rem solid #000000;
+    color: #000000;
+}
+
+.btn--stroke-whitebg:hover, button.btn--stroke-whitebg:hover {
+    border: 0.2rem solid #000000;
+    color: #FFFFFF;
+    background-color: black !important;
 }
 
 .btn--pill, button.btn--pill {
@@ -3331,7 +3349,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 footer {
-    padding: 9rem 0 6rem;
+    padding: 2rem 0 2rem;
     font-family: "montserrat-light", sans-serif;
     font-size: 15px;
     line-height: 2;

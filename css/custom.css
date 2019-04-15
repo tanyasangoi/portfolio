@@ -328,97 +328,6 @@ p{
     margin: 0 auto;
 }
 
-@media screen and (max-width: 1080px) {
-    .overview-left, .overview-right {
-        clear:both;
-        width: 100%;
-    }
-    .overview-right {
-        margin-left: 0;
-    }
-    .overview-left {
-        margin-bottom: 2%;
-    }
-    .get-to-know-me {
-        clear:both;
-        width:100%;
-    }
-    .gallery-l, .gallery-r {
-        clear:both;
-        width:100%;
-        margin: 0 auto;
-    }
-    .gallery-l img, .gallery-r img {
-        width:90%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        margin-bottom: 5%
-    }
-    .gallery-l p, .gallery-r p {
-        width:95%;
-    }
-    .condenser, .condenser-overview {
-        width:90%;
-    }
-    .condenser-gallery {
-        width:90%;
-    }
-    .full-masonry {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .full-works {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .home-content__scroll {
-        position: absolute;
-        left: 50%;
-        right:50%;
-        bottom: 5%;
-        width:100%;
-    }
-    .sticky-nav a {
-        padding-left: 1%;
-        padding-right: 1%;
-        display: block;
-    }
-    .nav-logo, .nav-links {
-        width:100%;
-        
-    }
-    .nav-links a {
-        padding-left: 0.5% !important;
-        padding-right:0.5% !important;
-    }
-    .btn-container {
-        padding-right: 0;
-    }    
-}
-
-@media screen and (max-width: 780px) {
-    .sticky-nav {
-        display:none;
-    }
-    
-    .mobile-nav {
-        display:block;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .btn {
-        clear:both;
-        width:90%;
-        margin-left:0;
-        margin-right:0;
-        margin: 0 auto;
-        margin-bottom: 5%;
-    }
-}
-
-
 .overview-header {
     margin-left: 0;
     color:black;
@@ -561,7 +470,7 @@ ul {
 
 .login-div-row-buttons {
     margin: 0 auto;
-    width: 40%;
+    width: 80%;
     height: 15%;
 }
 
@@ -574,18 +483,15 @@ ul {
     border: 1px solid red !important;
 }
 
-.login-submit {
+.login-submit, .login-cancel {
     margin: 0 auto;
-    width:auto;
+    width:45%;
     height: 100%;
     float: left;
 }
 
-.login-cancel {
-    margin: 0 auto;
-    width:auto;
-    height: 100%;
-    float:right;
+.login-submit {
+    margin-right: 10%;
 }
 
 .login-submit:hover, .login-cancel:hover,
@@ -630,6 +536,114 @@ ul {
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@media screen and (max-width: 1080px) {
+    .overview-left, .overview-right {
+        clear:both;
+        width: 100%;
+    }
+    .overview-right {
+        margin-left: 0;
+    }
+    .overview-left {
+        margin-bottom: 2%;
+    }
+    .get-to-know-me {
+        clear:both;
+        width:100%;
+    }
+    .gallery-l, .gallery-r {
+        clear:both;
+        width:100%;
+        margin: 0 auto;
+    }
+    .gallery-l img, .gallery-r img {
+        width:90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 5%
+    }
+    .gallery-l p, .gallery-r p {
+        width:95%;
+    }
+    .condenser, .condenser-overview {
+        width:90%;
+    }
+    .condenser-gallery {
+        width:90%;
+    }
+    .full-masonry {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .full-works {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .home-content__scroll {
+        position: absolute;
+        left: 50%;
+        right:50%;
+        bottom: 5%;
+        width:100%;
+    }
+    .sticky-nav a {
+        padding-left: 1%;
+        padding-right: 1%;
+        display: block;
+    }
+    .nav-logo, .nav-links {
+        width:100%;
+        
+    }
+    .nav-links a {
+        padding-left: 0.5% !important;
+        padding-right:0.5% !important;
+    }
+    .btn-container {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .sticky-nav {
+        display:none;
+    }
+    
+    .mobile-nav {
+        display:block;
+    }
+    .login-panel {
+        width: 100%;
+        top: 25%;
+        left: 0;
+        height: auto;
+    }
+    .login-submit, .login-cancel {
+        width: 100%;
+        clear:both;
+        width:100%;
+        margin-left:0;
+        margin-right:0;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .btn {
+        clear:both;
+        width:90%;
+        margin-left:0;
+        margin-right:0;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+    .login-submit, .login-cancel {
+        width: 100%;
+    }
 }
 
 /*

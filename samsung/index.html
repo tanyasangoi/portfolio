@@ -65,10 +65,10 @@
             </a>
         </div>
         <div class='nav-links'>
-            <a href='../index.html#home'>Home</a>
             <a href='../index.html#contact'>Contact</a>
             <a href='../index.html#works'>Work</a>
             <a href='../index.html#about'>About</a>
+            <a href='../index.html#home'>Home</a>
         </div>
     </div>
 
@@ -79,10 +79,10 @@
             </a>
         </div>
         <div class='mobile-nav-links'>
-            <a href='../index.html#home'>Home</a>
             <a href='../index.html#contact'>Contact</a>
             <a href='../index.html#works'>Work</a>
             <a href='../index.html#about'>About</a>
+            <a href='../index.html#home'>Home</a>
         </div>
         <a class='mobile-nav-icon' href='javascript:void(0)' style="height: auto">
             <i class='fa fa-bars'></i>
@@ -245,6 +245,24 @@
 </section>
     
 <section id='projects' class='s-work' style='background-color:black'>
+    <div class='login-overlay'>
+        <div class='login-panel'>
+            <h3 class='login-header'>Protected Content</h3>
+            <span class='login-subtext'>Please enter password to view protected content.</span>
+            <br/><br/>
+            <div class='login-div-row'>
+                <input type='password' class='login-password' placeholder='Password'>
+            </div>
+            <div class='login-div-row-buttons'>
+                <a href='#' class="btn btn--stroke login-submit">
+                    Submit
+                </a>
+                <a href='#' class="btn btn--stroke login-cancel">
+                    Cancel
+                </a>
+            </div>
+        </div>
+    </div>
     <div class='condenser-gallery'>
         <div class="row section-header" data-aos="fade-up" style='margin-left: 0;'>
             <h3 class="subhead" align='left' style='margin-left: 0; color:gray;'>Projects</h3>
@@ -255,7 +273,7 @@
                     <div class="masonry__brick" data-aos="fade-up"> <!-- begin masonry__brick -->
                         <div class="item-folio">
                             <div class="item-folio__thumb">
-                                <a href="../login/" class="thumb-link" title="Samsung" islink='1' data-size="1050x700">
+                                <a href="../login/" class="thumb-link" title="Samsung" islink='1' protected='1' data-size="1050x700">
                                     <img src="../images/SamsungOffers.png"
                                          srcset="../images/SamsungOffers.png 1x, ../images/SamsungOffers.png 2x" alt="">
                                 </a>
@@ -273,7 +291,7 @@
                         <div class="masonry__brick" data-aos="fade-up"> <!-- begin masonry__brick -->
                         <div class="item-folio">
                             <div class="item-folio__thumb">
-                                <a href="../login/" class="thumb-link" title="Samsung" islink='1' data-size="1050x700">
+                                <a href="../login/" class="thumb-link" title="Samsung" islink='1' protected='1' data-size="1050x700">
                                     <img src="../images/Support_Samsung.png"
                                          srcset="../images/Support_Samsung.png 1x, ../images/Support_Samsung.png 2x" alt="">
                                 </a>
@@ -291,7 +309,7 @@
                     <div class="masonry__brick" data-aos="fade-up"> <!-- begin masonry__brick -->
                         <div class="item-folio">
                             <div class="item-folio__thumb">
-                                <a href="job_samsung.html" class="thumb-link" title="Samsung" data-size="1050x700">
+                                <a href="job_samsung.html" class="thumb-link" title="Samsung" protected='1' data-size="1050x700">
                                     <img src="../images/conteny%203.png"
                                          srcset="../images/conteny%203.png 1x, ../images/conteny%203.png 2x" alt="">
                                 </a>
@@ -577,7 +595,7 @@
        });
     });
 </script>
-
+<script src='../js/custom.js'></script>
 </body>
 
 </html>

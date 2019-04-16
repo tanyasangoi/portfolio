@@ -14,7 +14,3 @@ $('.login-cancel').click(function() {
 $('.login-password').on('focus', function() {
     $('.login-subtext').text('Please enter password to view protected content.');
 });
-
-//var quote = quotes[Math.floor(Math.random() * quotes.length)]
-//
-//document.querySelector(".loader-text").innerText = quote;

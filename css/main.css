@@ -892,7 +892,7 @@ input[type="button"].btn--primary:focus {
     color: #000000;
 }
 
-.btn--stroke-whitebg:hover, button.btn--stroke-whitebg:hover {
+.btn--stroke-whitebg:.not(.nohover):hover, button.btn--stroke-whitebg:.not(.nohover):hover {
     border: 0.2rem solid #000000;
     color: #FFFFFF;
     background-color: black !important;

@@ -25,707 +25,235 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
+    <script src='js/md5.js'></script>
 
     <!-- favicons
     ================================================== -->
     <link rel="shortcut icon" href="images/stars.png" type="image/x-icon">
     <link rel="icon" href="images/stars.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css" integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
 
 </head>
 
-<body id="top">
+<body id='top'>
 
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
-
-        <!--<div class="header-logo">-->
-            <!--<a class="site-logo" href="index.html">-->
-              <!--<img src="logos/Logo2.png" alt="Homepage" style='max-width: 250%;'>-->
-            <!--</a>-->
-        <!--</div>-->
-
-        <div class='sticky-nav'>
-            <div class='nav-logo'>
-                <a href='/' class='logo'>
-                    <img src="logos/Logo2.png" alt="Homepage" style='height: 100%;'>
-                </a>
+    <div class='login-overlay'>
+        <div class='login-panel'>
+            <h3 class='login-header'>Protected Content</h3>
+            <span class='login-subtext'>Please enter password to view protected content.</span>
+            <br/><br/>
+            <div class='login-div-row'>
+                <input type='password' class='login-password' placeholder='Password'>
             </div>
-            <div class='nav-links'>
-                <a href='#contact'>Contact</a>
-                <a href='#works'>Work</a>
-                <a href='#about'>About</a>
-                <a href='#home'>Home</a>
+            <div class='login-div-row-buttons'>
+                <a href='#' class="btn btn--stroke--whitebg login-submit">
+                    Submit
+                </a>
+                <a href='#' class="btn btn--stroke--whitebg login-cancel">
+                    Cancel
+                </a>
             </div>
         </div>
-        
-        <div class='mobile-nav'>
-            <div class='nav-logo'>
-                <a href='/' class='logo'>
-                    <img src="logos/Logo2.png" alt="Homepage">
-                </a>
-            </div>
-            <div class='mobile-nav-links'>
-                <a href='#home'>Home</a>
-                <a href='#about'>About</a>
-                <a href='#works'>Work</a>
-                <a href='#contact'>Contact</a>
-            </div>
-            <a class='mobile-nav-icon' href='javascript:void(0)' style="height: auto">
-                <i class='fa fa-bars'></i>
+    </div>
+    <div class='sticky-nav'>
+        <div class='nav-left three-col'>
+            <a href='#' data-lander='about' class='landing-navigator'>About</a>
+        </div>
+        <div class='nav-middle three-col'>
+            <a href='#' data-lander='home' class='landing-navigator'>
+                <img src='images/TS.png'>
             </a>
         </div>
-
-        <!--<nav class="header-nav">-->
-
-            <!--<a href="#0" class="header-nav__close" title="close"><span>Close</span></a>-->
-
-            <!--<div class="header-nav__content">-->
-                <!--<h3>Navigation</h3>-->
-                <!---->
-                <!--<ul class="header-nav__list">-->
-                    <!--<li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>-->
-                    <!--<li><a class="smoothscroll"  href="#about" title="about">About</a></li>-->
-                    <!--<li><a class="smoothscroll"  href="#work" title="work">Work</a></li>-->
-                    <!--<li><a class="smoothscroll"  href="#resume" title="resume">Resume</a></li>-->
-                    <!--<li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>-->
-                <!--</ul>-->
-
-                <!--<ul class="header-nav__social">-->
-                    <!--<li>-->
-                        <!--<a href="https://www.linkedin.com/in/tanyasangoi/" target='_blank'><i class="fa fa-linkedin" aria-hidden="true"></i></a>-->
-                    <!--</li>-->
-
-                    <!--<li>-->
-                        <!--<a href='https://github.com/tanyasangoi/' target='_blank'><i class="fa fa-github" aria-hidden="true"></i></a>-->
-                    <!--</li>-->
-
-                    <!--<li>-->
-                        <!--<a href="https://www.instagram.com/tanya_sangoi/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>-->
-                    <!--</li>-->
-                <!--</ul>-->
-
-            <!--</div> &lt;!&ndash; end header-nav__content &ndash;&gt;-->
-
-        <!--</nav>  &lt;!&ndash; end header-nav &ndash;&gt;-->
-
-        <!--<a class="header-menu-toggle" href="#0">-->
-            <!--<span class="header-menu-text">Menu</span>-->
-            <!--<span class="header-menu-icon"></span>-->
-        <!--</a>-->
-
-    </header> <!-- end s-header -->
-
-
-    <!-- home
-    ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/header-bg.JPG" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
-        <div class="overlay" style='opacity: 0.5'></div>
-        <div class="shadow-overlay"></div>
-
-        <div class="home-content">
-
-            <div class="row home-content__main">
-
-                <h3 style="color: #ff0; font-size:2rem">Hi, I'm Tanya</h3>
-
-                <h1 style="font-size: 5rem">
-                    I strive to design <br/>
-                    meaningful experiences.
-                </h1>
-
-                <div class="home-content__buttons">
-                    <a href="#works" class="smoothscroll btn btn--stroke">
-                        See My Work
+        <div class='nav-right three-col'>
+            <a href="#" data-lander='contact' class='landing-navigator'>Contact</a>
+        </div>
+    </div>
+    
+    <div class='contact-landing-section lander'>
+        <div class='contact-container'>
+            <div class='center-condensed'>
+            <h1 class='contact-header'>Let's <span style='color:purple'>connect</span></h1>
+                <div class='contact-area' style="margin-bottom: 5%;">
+                    <a href="TS_Resume_4_5.pdf"  download='resume.pdf' onclick="window.open('TS Resume 4.7.pdf')" class="smoothscroll btn btn--stroke-whitebg contact-button">
+                        Download Resume
                     </a>
-                    <a href='#contact' class="btn btn--stroke">
-                        Get in touch
 
+                    <a href='mailto:tsangoi@uw.edu?subject=Hi Tanya&body=' class="btn btn--stroke-whitebg contact-button">
+                        Email Me
                     </a>
-                
                 </div>
-
-            </div>
-
-            <div class="home-content__scroll">
-                <a href="#about" class="scroll-link smoothscroll">
-                    <span class="=">Scroll Down</span>
+                
+            <h1 class="display-2 display-2--dark" style='color:black; text-align: center; margin-bottom: 5%'>Or follow me here</h1>
+            <div class='contact-social-section'>
+                <a href="https://www.linkedin.com/in/tanyasangoi/" target='_blank' class='contact-social'> 
+                    <img src='images/contact/linkedin.png'>
+                </a>
+                <a href='https://github.com/tanyasangoi/' target='_blank' class='contact-social'>
+                    <img src='images/contact/github-sign.png'>
+                </a>
+                <a href="https://www.instagram.com/tanya_sangoi/" target="_blank" class='contact-social'>
+                    <img src='images/contact/instagram.png'>
                 </a>
             </div>
 
-           
-
-        </div> <!-- end home-content -->
-
-        <ul class="home-social">
-
-            <li>
-            <a href="https://www.linkedin.com/in/tanyasangoi/" target='_blank'><i class="fa fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
-            </li>
-
-            <li>
-            <a href='https://github.com/tanyasangoi/' target='_blank'><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a>
-            </li>
-
-            <li>
-            <a href="https://www.instagram.com/tanya_sangoi/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
-            </li>
-        </ul>
-        <!-- end home-social -->
-
-
-        <!-- end home-social -->
-
-    </section> <!-- end s-home -->
-    
-                <!-- about
-    ================================================== -->
-    <section id='about' class="s-about">
-
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Hello There</h3>
-                <h1 class="display-1 display-1--light" style="color: #3a6893">Get to know me better </h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row about-desc" data-aos="fade-up">
-            <div class='get-to-know-me'>
-                <p style='color:white; font-size: 2.3rem; padding: 5%'>
-                I am a graduate student at the University of Washington, studying User Experience Design & Information Architecture.
-                    <br><br>
-                The words of Pierre Reverdy, "Creativity is to think more efficiently" echo my design philosophy and I believe that great design should be clean, effortless and colorful.
-                    <br><br>
-                I want to live by cliches like “Cover the earth before the earth covers you”. When I am  not busy brainstorming my next idea or planning my next trip, you can find me writing poetry, coloring my hair red and discovering new music.
-                </p>
-            </div>
-        </div> <!-- end about-desc -->
-
-    </section> <!-- end s-about -->
-    
-
-    <!-- works
-    ================================================== -->
-    <section id='works' class="s-works">
-
-        <div class="intro-wrap">
-                
-            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
-                <div class="col-full">
-                    <h3 class="subhead">Projects</h3>
-                    <h1 class="display-2 display-2--light">Here's a showcase of some of my work...</h1>
-                </div>
-            </div> <!-- end section-header -->
-
-        </div> <!-- end intro-wrap -->
-
-        <div class="row works-content">
-            <div class="col-full masonry-wrap">
-                <div class="masonry">
-                    
-                    <div class="masonry__brick" data-aos="fade-up">
-
-                        <div class="item-folio">
-
-
-                            <div class="item-folio__thumb">
-                                <a href="samsung/" class="thumb-link" title="Samsung" islink='1' data-size="1050x700">
-                                    <img src="images/samsung_logo.png"
-                                         srcset="images/samsung_logo.png 1x, images/samsung_logo.png 2x" alt="">
-                                </a>
-
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Samsung
-                                </h3>
-                                <p class="item-folio__cat">
-                                    UX Intern | UX Design, Research, Content Writing
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    
-                    <div class="masonry__brick" data-aos="fade-up"> <!-- begin masonry__brick -->
-
-                        <div class="item-folio">
-
-
-                            <div class="item-folio__thumb">
-                                <a href="wally/" class="thumb-link" title="Wally" islink='1' data-size="1050x700">
-                                    <img src="images/wally_logo.png"
-                                         srcset="images/wally_logo.png 1x, images/wally_logo.png 2x" alt="">
-                                </a>
-
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Wally
-                                </h3>
-                                <p class="item-folio__cat">
-                                    UX Design Intern | UX Design, Research
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                <div class="masonry__brick" data-aos="fade-up">
-
-                        <div class="item-folio">
-
-
-                            <div class="item-folio__thumb">
-                                <a href="nasa/" class="thumb-link" title="NASA" islink='1' data-size="1050x700">
-                                    <img src="images/nasa_logo.png"
-                                         srcset="images/nasa_logo.png 1x, images/nasa_logo.png 2x" alt="">
-                                </a>
-
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    NASA Space Apps Challenge
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Hackathon | Game Design
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                
-                    
-                    <div class="masonry__brick" data-aos="fade-up"> 
-
-                        <div class="item-folio">
-
-
-                            <div class="item-folio__thumb">
-                                <a href="foodie-fanatic/" class="thumb-link" title="Capstone"  islink='1' data-size="1050x700">
-                                    <img src="images/foodie2.png"
-                                         srcset="images/foodie2.png 1x, images/foodie2.png 2x" alt="">
-                                </a>
-
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title" >
-                                    Foodie Fanatic
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Academic | Information Architecture
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div> 
-
 <!--
-                    <div class="masonry__brick" data-aos="fade-up"> 
 
-                        <div class="item-folio">
-
-
-                            <div class="item-folio__thumb">
-                                <a href="project_capstone.html" class="thumb-link" title="Capstone" data-size="1050x700">
-                                    <img src="images/capstone.png"
-                                         srcset="images/capstone.png 1x, images/capstone.png 2x" alt="">
-                                </a>
-
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Project ALIVE
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Capstone | Mixed Reality
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div> 
--->
-
-<!--
-                    <div class="masonry__brick" data-aos="fade-up"> 
-
-                        <div class="item-folio">
-
-
-                            <div class="item-folio__thumb">
-                                <a href="project_cvm.html" class="thumb-link" title="CVM" data-size="1050x700">
-                                    <img src="images/cvm.png"
-                                         srcset="images/cvm.png 1x, images/cvm.png 2x" alt="">
-                                </a>
-
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Contraceptive Vending Machines in India
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Academic Project | Product Design, Localization Research
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div>
--->
-
-<!--
-                    <div class="masonry__brick" data-aos="fade-up"> 
-
-                        <div class="item-folio">
-
-
-                            <div class="item-folio__thumb">
-                                <a href="hack_ideathon.html" class="thumb-link" title="Capstone" data-size="1050x700">
-                                    <img src="images/ideathon.png"
-                                         srcset="images/ideathon.png 1x, images/ideathon.png 2x" alt="">
-                                </a>
-
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Imagine Mobility Ideathon
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Hackathon | UX Design
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div> 
--->
-
-
-<!--
-                    <div class="masonry__brick" data-aos="fade-up"> 
-
-                        <div class="item-folio">
-
-
-                            <div class="item-folio__thumb">
-                                <a href="project_beer.html" class="thumb-link" title="Brew Master" data-size="1050x700">
-                                    <img src="images/brewmaster.png"
-                                         srcset="images/brewmaster.png 1x, images/brewmaster.png 2x" alt="">
-                                </a>
-
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Brew Master
-                                </h3>
-                                <p class="item-folio__cat">
-                                   Academic Project | Web Development
-                                </p>
-                            </div>
-    
-                        </div>
-
-                    </div> 
--->
-
-
-
-
-<!--
-                    <div class="masonry__brick" data-aos="fade-up"> 
-
-                        <div class="item-folio">
-
-
-                            <div class="item-folio__thumb">
-                                <a href="job_research.html" class="thumb-link" title="Research" data-size="1050x700">
-                                    <img src="images/"
-                                         srcset="images/research_logo.png 1x, images/research_logo.png 2x" alt="">
-                                </a>
-
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    CoSSaR, UW
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Graduate Research Assistant | User Research
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div> 
--->
-
-
-
-
-
-                </div> <!-- end masonry -->
-            </div> <!-- end col-full -->
-        </div> <!-- end works-content -->
-
-    </section> <!-- end s-works -->
-
-
-    <!-- resume
-    ================================================== -->
-
-    <!--<section id='resume' class='s-resume'>-->
-        <!--<div class="container">-->
-            <!--<div class="row section-header" data-aos="fade-up">-->
-                <!--<div class="col-full">-->
-                    <!--<h3 class="subhead">Resume</h3>-->
-                    <!--<div class="centre" style="padding-top:3%">-->
-                        <!--<a href="TS_Resume_4_5.pdf"  download='resume.pdf' onclick="window.open('TS_Resume_4_5.pdf')" class="smoothscroll btn btn&#45;&#45;stroke">-->
-                            <!--Download Resume-->
-                        <!--</a>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="row">-->
-                <!--<div class="col-lg-12">-->
-                    <!--<ul class="timeline">-->
-                        <!--<li class="timeline-inverted">-->
-                            <!--<div class="timeline-image">-->
-                                <!--<h4>Your<br/>Company? </h4>-->
-                            <!--</div>-->
-                        <!--</li>-->
-                        <!--<li>-->
-                            <!--<div class="timeline-image">-->
-                                <!--<img class="rounded-circle img-fluid" src="images/magicleap_logo.png" style="width: available" alt="">-->
-                            <!--</div>-->
-                            <!--<div class="timeline-panel">-->
-                                <!--<div class="timeline-heading">-->
-                                    <!--<h4 class='timeline-date'>Janunary 2019 - Present</h4>-->
-                                    <!--<h4 class="timeline-company">Magic Leap</h4>-->
-                                    <!--<h4 class="timeline-subheading">UX Designer & Developer</h4>-->
-
-                                <!--</div>-->
-                                <!--<div class="timeline-description">-->
-                                    <!--<p>Designing an interactive AR museum exhibit for the Pacific Science Centre using the Magic Leap One Headset</p>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</li>-->
-                        <!--<li class="timeline-inverted">-->
-                            <!--<div class="timeline-image">-->
-                                <!--<img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">-->
-                            <!--</div>-->
-                            <!--<div class="timeline-panel">-->
-                                <!--<div class="timeline-heading">-->
-                                    <!--<h4 class="timeline-date">November 2018 - February 2019</h4>-->
-                                    <!--<h4 class="timeline-company">Samsung</h4>-->
-                                    <!--<h4 class="timeline-subheading">UX Intern</h4>-->
-                                <!--</div>-->
-                                <!--<div class="timeline-description">-->
-                                    <!--<p class="text-muted">Incorporated user research feedback from to craft great experiences with the Samsung e-commerce team. <br/>Helped with both content writing and designing of the Samsung e-commerce website and Samsung Support</p>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</li>-->
-                        <!--<li>-->
-                            <!--<div class="timeline-image">-->
-                                <!--<img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">-->
-                            <!--</div>-->
-                            <!--<div class="timeline-panel">-->
-                                <!--<div class="timeline-heading">-->
-                                    <!--<h4 class="timeline-date">March 2018 - December 2018</h4>-->
-                                    <!--<h4 class="timeline-company">COSSAR Labs at Univerity of Washington</h4>-->
-                                    <!--<h4 class="timeline-subheading">Research Assistant</h4>-->
-                                <!--</div>-->
-                                <!--<div class="timeline-description">-->
-                                    <!--<p class="text-muted">Designed an information sharing system to relay critical information in times of traffic incidents between various stakeholders like the Police, Department of Transportation etc.<br/>Conducted qualitative research through interviews to understand the problem space and define user personas </p>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</li>-->
-                        <!--&lt;!&ndash;<li class="timeline-inverted">&ndash;&gt;-->
-                            <!--&lt;!&ndash;<div class="timeline-image timeline-end">&ndash;&gt;-->
-                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<div class="timeline-panel-1">&ndash;&gt;-->
-                                <!--&lt;!&ndash;<div class="timeline-heading">&ndash;&gt;-->
-                                    <!--&lt;!&ndash;<h4 class="timeline-date">June 2018 - August 2018</h4>&ndash;&gt;-->
-                                    <!--&lt;!&ndash;<h4 class="timeline-company">Wally</h4>&ndash;&gt;-->
-                                    <!--&lt;!&ndash;<h4 class="timeline-subheading">UX Design Intern</h4>&ndash;&gt;-->
-                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                                <!--&lt;!&ndash;<div class="timeline-description">&ndash;&gt;-->
-                                    <!--&lt;!&ndash;<p class="text-muted">Responsible for the dashboard redesign of Wally Pro, an IoT monitoring ecosystem for large residential complexes. <br/>Collaborated with engineers to redesign the mobile application&ndash;&gt;-->
-                                        <!--&lt;!&ndash;used for product installation to map to the user’s mental model</p>&ndash;&gt;-->
-                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
-                <!--&lt;!&ndash;&ndash;&gt;-->
-                      <!--&lt;!&ndash;&ndash;&gt;-->
-                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
-                        <!--<li class="timeline-inverted timeline-end">-->
-                            <!--<div class="timeline-image">-->
-
-                            <!--</div>-->
-                            <!--<div class="timeline-panel">-->
-                                <!--<div class="timeline-heading">-->
-                                    <!--<h4 class="timeline-date">June 2018 - August 2018</h4>-->
-                                    <!--<h4 class="timeline-company">Wally</h4>-->
-                                    <!--<h4 class="timeline-subheading">UX Design Intern</h4>-->
-                                <!--</div>-->
-                                <!--<div class="timeline-description">-->
-                                    <!--<p class="text-muted">Responsible for the dashboard redesign of Wally Pro, an IoT monitoring ecosystem for large residential complexes. <br/>Collaborated with engineers to redesign the mobile application-->
-                                        <!--used for product installation to map to the user’s mental model</p>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</li>-->
-                    <!--</ul>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</section> &lt;!&ndash; end s-resume &ndash;&gt;-->
-
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact" style='background-color: #2f0f1d;'>
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Contact</h3>
-                <h1 class="display-2 display-2--dark" style='color:#ffffff'>Reach out for a new project or just say hello</h1>  <br>
-            </div>
-
-
-            <div class="centre" >
-
-                <a href="TS_Resume_4_5.pdf"  download='resume.pdf' onclick="window.open('TS_Resume_4_5.pdf')" class="smoothscroll btn btn--stroke">
-                    Download Resume
-                </a>
-
-                <a href='mailto:tsangoi@uw.edu?subject=Hi Tanya&body=' class="btn btn--stroke">
-                    Email Me
-                </a>
-
-            </div>
-            <br>
-            <h1 class="display-2 display-2--dark" style='color:#ffffff'>Or follow me here</h1>
-            <ul class="contact-social">
+            <ul class="contact-social" style='text-align: center; display: block;'>
 
                 <li>
-                    <a href="https://www.linkedin.com/in/tanyasangoi/" target='_blank'><i class="fa fa-linkedin" style="font-size: 3.5rem" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/tanyasangoi/" target='_blank' style="color:black;"><i class="fab fa-linkedin" style="font-size: 5rem; color:black" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/tanya_sangoi/" target="_blank"><i class="fa fa-instagram" style="font-size: 3.5rem" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/tanya_sangoi/" target="_blank" style="color:black"><i class="fab fa-instagram" style="font-size: 5rem; color: black" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                    <a href='https://github.com/tanyasangoi/' target='_blank'><i class="fa fa-github" style="font-size: 3.5rem" aria-hidden="true"></i></a>
+                    <a href='https://github.com/tanyasangoi/' target='_blank' style="color:black"><i class="fab fa-github" style="font-size: 5rem" aria-hidden="true"></i></a>
                 </li>
 
-            </ul> <!-- end contact-social -->
-            </div>
+            </ul>
+-->
 
-    </section> <!-- end s-contact -->
-        
-
-
-    <!-- footer
-    ================================================== -->
-    <footer>
-
-        <!--<div class="row footer-main">-->
-
-           <!--&lt;!&ndash; <div class="col-six tab-full left footer-desc">-->
-
-                <!--<div class="footer-logo"></div>-->
-                <!--Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.-->
-
-            <!--</div>&ndash;&gt;-->
-
-
-
-        <!--</div> &lt;!&ndash; end footer-main &ndash;&gt;-->
-
-        <div class="row footer-bottom">
-
-            <div class="col-twelve">
-                <div class="copyright">
-                    <span>© Copyright Tanya Sangoi 2019</span>
-                </div>
-
-                <div class="go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
-                </div>
-            </div>
-
-        </div> <!-- end footer-bottom -->
-
-    </footer> <!-- end footer -->
-
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
             </div>
 
         </div>
-
-    </div> <!-- end photoSwipe background -->
-
-
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
+    </div>
+    
+    <div class='about-landing-section lander'>
+        <div class='about-container'>
+            <div class='about-image-left'>
+                <img src='images/Profile.png'>
+            </div>
+            <div class='about-desc-right'>
+                <p style='color:black; font-size: 2rem;font-family: "montserrat-regular", sans-serif;'>
+                    After completing my undergraduate education in computer engineering, I realized that I wanted to focus more on the people aspect of technology.
+                    <br/> <br/>
+            While I was pursuing my Masters at the University of Washington, I found my true calling in UX. I thrived in the dynamic design environment where I could approach problems with empathy and creative collaboration.</p>
+            <div class='big-quote-container' style="margin-top: 0;">
+                <blockquote style="margin-top:0">Creativity is to think more efficiently.</blockquote>
+                <footer class='quote-credit'>— Pierre Reverdy</footer>
+            </div>
+                <br/><br/>
+               <p style='color:black; font-size: 2rem;font-family: "montserrat-regular", sans-serif;'>These words echo my design philosophy. I believe that great design should be clean, effortless and colorful.
+                   My design process is extremely detail oriented, driven by a quest for distilling true value for a user.
+                <br> <br>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class='work-landing-section lander'>
+        
+        <div class='work-container'>
+            
+            <h1 class='pitch' align='center' style='font-size:4.5rem'>I'm all about designing <span style='color:purple;'>meaningful</span> experiences...</h1>
+            <br/><br/>
+            <div class='work-item-row'>
+                <a href='wallyhome/' class='link-overlay-half'>
+                    <div class='work-item-half' style='background: url("images/wallyhome/wallyhome.png") no-repeat center center; background-size: cover !important;'>
+                        <div class='work-item-text-area'>
+                            <h1 align='center' class='work-item-text-header'>Wally Home</h1>
+                            <h1 align='center' class='work-item-text-pitch'>UX Design | IoT</h1>
+                        </div>
+                    </div>
+                </a>
+                <a href='foodiefanatic/' class='link-overlay-half'>
+                    <div class='work-item-half' style='background: url("images/foodiefanatic/foodie%203.png") no-repeat center center; background-size: cover !important;'>
+                        <div class='work-item-text-area'>
+                            <h1 align='center' class='work-item-text-header'>Foodie Fanatic</h1>
+                            <h1 align='center' class='work-item-text-pitch'>Academic | Information Architecture</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class='work-item-row'>
+                <a href='carebuddy/' class='link-overlay-half'>
+                    <div class='work-item-half' style='background: url("images/carebuddy/Dementia.png") no-repeat center center; background-size: cover !important;'>
+                        <div class='work-item-text-area'>
+                            <h1 align='center' class='work-item-text-header'>Care Buddy</h1>
+                            <h1 align='center' class='work-item-text-pitch'>User Research</h1>
+                        </div>
+                    </div>
+                </a>
+                <a href='nasa/' class='link-overlay-half'>
+                    <div class='work-item-half' style='background: url("images/polarquest/SEASPACE.jpg") no-repeat center center; background-size: cover !important;'>
+                        <div class='work-item-text-area'>
+                            <h1 align='center' class='work-item-text-header'>NASA Hackathon</h1>
+                            <h1 align='center' class='work-item-text-pitch'>Game Design</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+<!--
+            <div class='work-item-row'>
+                <a href='samsung-offers/' class='link-overlay-full' data-protected='1'>
+                    <div class='work-item-full' style='background: url("images/SamsungOffers%202.png") no-repeat center center; background-size: cover !important; background-position: 0% 35%;'>
+                        <div class='work-item-text-area'>
+                            <h1 align='center' class='work-item-text-header'>Samsung Offers</h1>
+                            <h1 align='center' class='work-item-text-pitch'>UX Design | eCommerce</h1>
+                            <h1 align='right' class='work-item-protected'><i class="fas fa-lock"></i>&nbsp;&nbsp;Password Protected</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+-->
+            <div class='work-item-row'>
+                <a href='samsung-discounts/' class='link-overlay-full' data-protected='1'>
+                    <div class='work-item-full' style='background: url("images/samsungdiscount/Samsung EPP.png") no-repeat center center; background-size: cover !important;'>
+                        <div class='work-item-text-area'>
+                            <h1 align='center' class='work-item-text-header'>Samsung Discounts</h1>
+                            <h1 align='center' class='work-item-text-pitch'>UX Design & Content Strategy | eCommerce</h1>
+                            <h1 align='right' class='work-item-protected'><i class="fas fa-lock"></i>&nbsp;&nbsp;Password Protected</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class='work-item-row'>
+                <a href='samsung-support/' class='link-overlay-full' data-protected='1'>
+                    <div class='work-item-full' style='background: url("images/samsungsupport/samsungsupport.png") no-repeat center center; background-size: cover !important; background-position: 0% 36%'>
+                        <div class='work-item-text-area'>
+                            <h1 align='center' class='work-item-text-header'>Samsung Support</h1>
+                            <h1 align='center' class='work-item-text-pitch'>UX Research | eCommerce</h1>
+                            <h1 align='right' class='work-item-protected'><i class="fas fa-lock"></i>&nbsp;&nbsp;Password Protected</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class='work-item-row'>
+                <a href='#' class='link-overlay-full'>
+                <div class='work-item-full' style='background: url("images/magic-leap-dino.png") no-repeat center center; background-size: cover !important;'>
+                    <div class='work-item-text-area'>
+                        <h1 align='center' class='work-item-text-header'>Magic Leap & PSC</h1>
+                        <h1 align='center' class='work-item-text-pitch'>Experience Design | Mixed Reality</h1>
+                        <h1 align='right' class='work-item-wip'><i class="fas fa-rocket"></i>&nbsp;&nbsp;Coming Soon`</h1>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class='work-item-row'>
+                <a href='#' class='link-overlay-full'>
+                    <div class='work-item-full' style='background: url("images/wallypro/wally_banner.png") no-repeat center center; background-size: cover !important;'>
+                        <div class='work-item-text-area'>
+                            <h1 align='center' class='work-item-text-header'>Wally Pro</h1>
+                            <h1 align='center' class='work-item-text-pitch'>UX Design & Research | IoT</h1>
+                            <h1 align='right' class='work-item-wip'><i class="fas fa-rocket"></i>&nbsp;&nbsp;Coming Soon</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+        
+            <div id="preloader">
         <div id="loader">
 
             <div class="loader-rainbow">
-<!--
-                <div class='loader-div'>
-                    <span class='loader-text'>
-                        
-                    </span>
-                </div>
--->
                 <div class="loader-inner">
                     <div class="loader-line-wrap">
                         <div class="loader-line"></div>
@@ -746,41 +274,42 @@
             </div>
         </div>
         
-        <!--
-                <div class='loader-div'>
-                    <span class='loader-text'>
-                        Life isn't always #00000 and #FFFFFF
-                    </span>
-                </div>
--->
-<!--            <img style='display:block; margin:auto' src="https://i.gifer.com/7YQl.gif">-->
 <!--
-            <div class="line-scale-pulse-out">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+        <div class='scroll-down-area'>
+            <a class='scroll-down-button' target='landing-about' href='#'>
+                <span class='scroll-down-arrow'>
+                </span>
+                <span class='scroll-down-arrow'>
+                </span>
+                <span class='scroll-down-arrow'>
+                </span>
+            </a>
+        </div>
 -->
     </div>
-
-
-    <!-- Java Script
-    ================================================== -->
+    
+    
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
+<!--
+    <script src='js/jquery-ui.js'></script>
+    <link rel='stylesheet' href='css/jquery-ui.css'>
+-->
     <script src="js/main.js"></script>
+<!--
     <script>
         $(document).ready(function() {
+
            $('.mobile-nav-icon').click(function() {
               $('.mobile-nav-links').css('display', $('.mobile-nav-links').css('display') == 'block' ? 'none' : 'block');
            });
         });
-        
+
     </script>
+-->
+    <script src='http://code.jquery.com/color/jquery.color.plus-names-2.1.2.min.js'></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src='js/custom.js'></script>
-<!--    <script src="js/custom.js"></script>-->
 
 </body>
 

@@ -50,101 +50,50 @@
 <!-- header
 ================================================== -->
 <header class="s-header">
-
-    <!--<div class="header-logo">-->
-        <!--<a class="site-logo" href="index.html">-->
-            <!--<img src="logos/Logo2.png" alt="Homepage" style='max-width: 250%;'>-->
-            <!--&lt;!&ndash;                <object data="images/logos/Logo2.svg" type="image/svg+xml"></object>&ndash;&gt;-->
-        <!--</a>-->
-    <!--</div>-->
-
-
     <div class='sticky-nav'>
-        <div class='nav-logo'>
-            <a href='/' class='logo'>
-                <img src="../logos/Logo2.png" alt="Homepage" style='height: 100%;'>
+        <div class='nav-left three-col'>
+            <a href='../?page=about'>About</a>
+        </div>
+        <div class='nav-middle three-col'>
+            <a href='../?page=home'>
+                <img src='../images/TS.png'>
             </a>
         </div>
-        <div class='nav-links'>
-            <a href='../index.html#contact'>Contact</a>
-            <a href='../index.html#works'>Work</a>
-            <a href='../index.html#about'>About</a>
-            <a href='../index.html#home'>Home</a>
+        <div class='nav-right three-col'>
+            <a href="../?page=contact">Contact</a>
         </div>
     </div>
-
-    <div class='mobile-nav'>
-        <div class='nav-logo'>
-            <a href='/' class='logo'>
-                <img src="../logos/Logo2.png" alt="Homepage">
-            </a>
+    
+    <div class='lightbox'>
+        <div class='lightbox-arrow-left-container'>
+            <button class='btn btn--stroke-whitebg lightbox-arrow nohover' data-dir='left'>
+                &#10094;
+            </button>
         </div>
-        <div class='mobile-nav-links'>
-            <a href='../index.html#home'>Home</a>
-            <a href='../index.html#about'>About</a>
-            <a href='../index.html#works'>Work</a>
-            <a href='../index.html#contact'>Contact</a>
+        <div class='lightbox-container'></div>
+        <div class='lightbox-close-container'>
+            <button class='btn btn--stroke-whitebg lightbox-close nohover' data-dir='left'>
+                &times;
+            </button>
         </div>
-        <a class='mobile-nav-icon' href='javascript:void(0)' style="height: auto">
-            <i class='fa fa-bars'></i>
-        </a>
+        <div class='lightbox-arrow-right-container'>
+            <button class='btn btn--stroke-whitebg lightbox-arrow arrow-right nohover' data-dir='right'>
+                &#10095;
+            </button>
+        </div>
     </div>
-    <!--<nav class="header-nav">-->
-
-    <!--<a href="#0" class="header-nav__close" title="close"><span>Close</span></a>-->
-
-    <!--<div class="header-nav__content">-->
-    <!--<h3>Navigation</h3>-->
-
-    <!--<ul class="header-nav__list">-->
-    <!--<li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>-->
-    <!--<li><a class="smoothscroll"  href="#about" title="about">About</a></li>-->
-    <!--<li><a class="smoothscroll"  href="#work" title="work">Work</a></li>-->
-    <!--<li><a class="smoothscroll"  href="#resume" title="resume">Resume</a></li>-->
-    <!--<li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>-->
-    <!--</ul>-->
-
-    <!--<ul class="header-nav__social">-->
-    <!--<li>-->
-    <!--<a href="https://www.linkedin.com/in/tanyasangoi/" target='_blank'><i class="fa fa-linkedin" aria-hidden="true"></i></a>-->
-    <!--</li>-->
-
-    <!--<li>-->
-    <!--<a href='https://github.com/tanyasangoi/' target='_blank'><i class="fa fa-github" aria-hidden="true"></i></a>-->
-    <!--</li>-->
-
-    <!--<li>-->
-    <!--<a href="https://www.instagram.com/tanya_sangoi/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>-->
-    <!--</li>-->
-    <!--</ul>-->
-
-    <!--</div> &lt;!&ndash; end header-nav__content &ndash;&gt;-->
-
-    <!--</nav>  &lt;!&ndash; end header-nav &ndash;&gt;-->
-
-    <!--<a class="header-menu-toggle" href="#0">-->
-    <!--<span class="header-menu-text">Menu</span>-->
-    <!--<span class="header-menu-icon"></span>-->
-    <!--</a>-->
-
 </header> <!-- end s-header -->
 
 
 <!-- home
 ================================================== -->
-<section id="home" style="background: url('../images/website%20mockup.png') no-repeat center center !important;
+<section id="home" style="background: url('../images/polarquest/team.jpg') no-repeat center center !important;
     background-size: cover !important; padding-top: 0 !important" class="s-home target-section" data-parallax="scroll" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
-    
-    <div class="home-content__scroll" style='bottom:17rem; right:4.5rem'>
-        <a href="#content" class="scroll-link smoothscroll">
-            <span style='color:black' class='scroll-down-text'>Scroll Down</span>
-        </a>
-    </div>
 <!--<section id="home" style="background-color: white; padding-top: 0 !important" class="s-home target-section" data-parallax="scroll" data-natural-width=3000 data-natural-height=2000 data-position-y=center>-->
 <!--
     <div style='position: absolute; top: 0; left: 0; width:100%; height:100%; padding-top:100px; margin: 0'>
         <div style=' width: 75%; height: auto; margin: 0 auto;'>
-        <div class="row horizontal" data-aos="fade-up">
+        <div class="row horizontal" >
 
             <div class="horizontal">
                 <p class="display-2" style="font-size: 5rem; text-align: center" style="color: black;">
@@ -202,10 +151,10 @@
 </section> <!-- end s-home -->
 
     
-<section id='content' style='background-color: white'>
+<section id='content' class='overview-section'>
     <div class='condenser-overview'>
-        <div class="row horizontal" data-aos="fade-up">
-            <h3 class="subhead overview-header" align='left'>Polar Quest</h3>
+        <div class="row horizontal" >
+            <h3 class='overview-header'>Polar Quest</h3>
             <br/>
             <div class='overview-left'>
                 <p class='details-header'>Role:</p>
@@ -220,7 +169,7 @@
 
             <div class='overview-right'>
                 <div class="horizontal">
-                        <p style='color:black;' class='overview-text'>
+                        <p class='overview-text'>
                             In October 2018, I participated in an international hackathon organized by NASA.
                             We had 48 hours to design & present a game that informed people
                             about the rapidly melting polar ice.
@@ -234,19 +183,19 @@
     </div>
     <div class="row section-header btn-container">
             <div class="centre" align='center'>
-                <a href="#problem" class="btn btn--stroke-whitebg">
+                <a href="#problem" class="btn btn--stroke">
                     Problem
                 </a>
-                <a href="#background" class="btn btn--stroke-whitebg">
+                <a href="#background" class="btn btn--stroke">
                     Background
                 </a>
-                <a href='#process' class="btn btn--stroke-whitebg">
+                <a href='#process' class="btn btn--stroke">
                     Process
                 </a>
-                <a href='#solution' class="btn btn--stroke-whitebg">
+                <a href='#solution' class="btn btn--stroke">
                     Solution
                 </a>
-                <a href='#outcome' class="btn btn--stroke-whitebg">
+                <a href='#outcome' class="btn btn--stroke">
                     Outcome
                 </a>
             </div>
@@ -257,12 +206,12 @@
 <!--
 <section id="role" class="s-role" style='background-color: #2f0f1d;'>
     <div style='width: 60%; height: auto; margin: 0 auto;'>
-        <div class="row section-header" data-aos="fade-up">
+        <div class="row section-header" >
             <div class="col-full">
                 <h3 class="subhead">Role</h3>
             </div>
         </div>
-        <div class="row horizontal" data-aos="fade-up">
+        <div class="row horizontal" >
 
             <div class="horizontal">
                 <p style="color:white">
@@ -281,15 +230,15 @@
 
 <!-- problem
 ================================================== -->
-<section id="problem" class="s-problem" style='background-color: #000000;'>
+<section id="problem" class="s-problem project">
 <div class='condenser'>
-    <div class="row section-header" data-aos="fade-up" style='margin-left: 0;'>
-        <h3 class="subhead" align='left' style='margin-left: 0; color:gray;'>Problem</h3>
+    <div class="row section-header"  style='margin-left: 0;'>
+        <h3 class='section-header'>Problem</h3>
     </div>
 
-    <div class="row horizontal" data-aos="fade-up">
+    <div class="row horizontal" >
         <div class="horizontal">
-            <p style="color:white" class='condenser-text'>
+            <p class='condenser-text'>
                 Design a quest-like game to teach others about polar environments and how they are changing. Use NASA data to help adventurers plan their quest and present them with challenges along the way.
             </p>
         </div>
@@ -300,13 +249,13 @@
 
 <!-- process
 ================================================== -->
-<section id="background" class="s-process" style='background-color: #FFFFFF;'>
+<section id="background" class="s-process project" style='background-color: #FFFFFF;'>
     <div class='condenser'>
-        <div class="row section-header" data-aos="fade-up" style='margin-left: 0;'>
-            <h3 class="subhead" align='left' style='margin-left: 0; color: gray;'>Background</h3>
+        <div class="row section-header"  style='margin-left: 0;'>
+            <h3 class='section-header'>Background</h3>
         </div>
 
-        <div class="row horizontal" data-aos="fade-up">
+        <div class="row horizontal" >
             <div class="horizontal">
                 <p style="color:black" class='condenser-text'>
                     Each year scientists plan expeditions to the Earth’s cryosphere to conduct experiments. For such challenging expeditions, careful planning is crucial to survival in the extreme environment. The changing conditions in the cryosphere are making it increasingly difficult for scientists to predict the weather and the terrain of the Arctic.
@@ -316,24 +265,23 @@
     </div>
 </section> <!-- end s-problem -->
     
-<section id="process" style='background-color: #000000;'>
+<section id="process"  class='project'>
     <div class='condenser'>
-        <div class="row section-header" data-aos="fade-up" style='margin-left: 0;'>
-            <h3 class="subhead" align='left' style='margin-left: 0; color:gray;'>Process</h3>
+        <div class="row section-header"  style='margin-left: 0;'>
+            <h3 class='section-header'>Process</h3>
         </div>
 
-        <div class="row horizontal" data-aos="fade-up">
+        <div class="row horizontal" >
             <div class="horizontal">
-                <p style="color:white" class='condenser-text'>
+                <p class='condenser-text'>
                     We used the NASA Sea Ice Index to understand the extent and the concentration of the ice in the Arctic. Data relevant to the current time of the year would be pulled from this database and used to design the game environment. 
                 </p>
                 <div style='margin: 0 auto'>
-                    <video width="100%" height="75%" controls loop>
-                      <source src="../nasa_process.mp4" type="video/mp4">
+                    <video width="100%" id='process_vid' height="75%" controls loop autoplay muted>
+                      <source src="../images/polarquest/nasa_process.mp4" type="video/mp4">
                     </video>
                 </div>
-                <p style='color:white;' class='condenser-text'>
-                    <br/>
+                <p class='condenser-text'>
                     Each tile of the game would be mapped to an area in the Arctic to replicate the ice thickness and weather conditions for that area.
                     Before we started designing the game, we did some research to learn more about the typical supplies and outdoor gear required to sustain in the Arctic. These were then used to design various artifacts and icons within the game.
                 </p>
@@ -344,124 +292,117 @@
     
 <!-- solution
 ================================================== -->
-<section id="solution" class="s-solution" style='background-color: #FFFFFF;'>
+<section id="solution" class="s-solution project">
     <div class='condenser-gallery'>
-        <div class="row section-header" data-aos="fade-up" style='margin-left: 0;'>
-            <h3 class="subhead" align='left' style='margin-left: 0; color:gray;'>Solution</h3>
-            <br/>
+        <div class="row section-header"  style='margin-left: 0;'>
+            <h3 class='section-header'>Solution</h3>
         </div>
 
-        <div class="row horizontal" data-aos="fade-up">
+        <div class="row horizontal" >
             <div class="horizontal">
-                <p style="color:black" class='condenser-text'>
+                <p class='condenser-text'>
                     We designed a desktop game in which an expeditor has to navigate through randomly disappearing blocks of sea ice. In addition, he also must collect and use the supplies in order to survive environmental hazards such as blizzards and avalanches. 
                 </p>
             </div>
         </div>
-
-        <div class="row horizontal gallery-section" data-aos="fade-up">
-            <h3 class="subhead" align='left' style='margin-left: 0; color:black; font-size:1.5rem'>Gameplay</h3>
+        <img src='../images/polarquest/website%20mockup.png' style="width:100% ; height:auto">
+        <div class="row horizontal gallery-section" >
+            <h3 class='section-subheader'>Gameplay</h3>
             <br/>
             <div class="horizontal">
                 <div class = "gallery-l">
-                    <img src="../images/gif/prep.gif">
+                    <img src="../images/polarquest/prep.gif" class='center-image'>
                 </div>
 
                 <div class = "gallery-r">
-                    <p style="color: black" class='condenser-text'>The game begins at the base camp where the player is preparing for the expedition.
-                    <br/>
+                    <p class='condenser-text'>The game begins at the base camp where the player is preparing for the expedition.
                     <br/>
                     While all the available supplies are important for the expedition, the player is only allowed to carry a limited amount of supplies. </p>
                 </div>
             </div>
         </div>
 
-        <div class="row horizontal gallery-section" data-aos="fade-up">
+        <div class="row horizontal gallery-section" >
 
             <div class="horizontal">
                 <div class = "gallery-l">
-                    <img src="../images/gif/move.gif">
+                    <img src="../images/polarquest/move.gif" class='center-image'>
                 </div>
 
                 <div class = "gallery-r">
-                    <p style="color: black" class='condenser-text'>The player has to make each move carefully, as there are randomly disappearing blocks of ice. </p>
+                    <p class='condenser-text'>The player has to make each move carefully, as there are randomly disappearing blocks of ice.</p>
                 </div>
             </div>
         </div>
         
-        <div class="row horizontal gallery-section" data-aos="fade-up">
+        <div class="row horizontal gallery-section" >
 
             <div class="horizontal">
                 <div class = "gallery-l">
-                    <img src="../images/gif/getshovel.gif">
+                    <img src="../images/polarquest/getshovel.gif" class='center-image'>
                 </div>
 
                 <div class = "gallery-r">
-                    <p style="color: black"  class='condenser-text'>The player can collect additional supplies along the way that can help him survive.  </p>
+                    <p class='condenser-text'>The player can collect additional supplies along the way that can help him survive.  </p>
                 </div>
             </div>
         </div>
 
-        <div class="row horizontal gallery-section" data-aos="fade-up">
+        <div class="row horizontal gallery-section" >
 
             <div class="horizontal">
                 <div class = "gallery-l">
-                    <img src="../images/gif/avalanche.gif">
+                    <img src="../images/polarquest/avalanche.gif" class='center-image'>
                 </div>
 
                 <div class = "gallery-r">
-                    <p style="color: black"  class='condenser-text'>The player may have to face disasters such as avalanches and blizzards while playing the game. 
-                    <br/>
+                    <p class='condenser-text'>The player may have to face disasters such as avalanches and blizzards while playing the game. 
                     <br/>
                     In the case of such a disaster, he may be able to use the supplies he has at hand to save himself. </p>
                 </div>
             </div>
         </div>
         
-        <div class="row horizontal gallery-section" data-aos="fade-up">
+        <div class="row horizontal gallery-section" >
 
             <div class="horizontal">
                 <div class = "gallery-l">
-                    <img src="../images/gif/blizzard.gif">
+                    <img src="../images/polarquest/blizzard.gif" class='center-image'>
                 </div>
 
                 <div class = "gallery-r">
-                    <p style="color: black"  class='condenser-text'>If the player does not have the necessary supplies in order to survive the disaster, he will lose a significant number of health points.
-                    <br/>
+                    <p  class='condenser-text'>If the player does not have the necessary supplies in order to survive the disaster, he will lose a significant number of health points.
                     <br/>
                     These points are indicated by the first bar on the top left.</p>
                 </div>
             </div>
         </div>
 
-        <div class="row horizontal gallery-section" data-aos="fade-up">
+        <div class="row horizontal gallery-section" >
 
             <div class="horizontal">
                 <div class = "gallery-l">
-                    <img src="../images/gif/alive.gif">
+                    <img src="../images/polarquest/alive.gif" class='center-image'>
                 </div>
 
                 <div class = "gallery-r">
-                        <p style="color: black"  class='condenser-text'>
-                            When the player collects green points he can reduce the Arctic temperature & slow down the melting rate of the ice.
-                            <br/>
-                            <br/>
-                            If the player collects sufficient green points, he can bring the temperature down to the optimum amount and save the Arctic.
+                    <p class='condenser-text'>
+                        When the player collects green points he can reduce the Arctic temperature & slow down the melting rate of the ice.
+                        <br/>
+                        If the player collects sufficient green points, he can bring the temperature down to the optimum amount and save the Arctic.
                     </p>
                 </div>
             </div>
         </div>
         
-        <div class="row horizontal gallery-section" data-aos="fade-up">
+        <div class="row horizontal gallery-section" >
             <div class="horizontal">
                 <div class = "gallery-l">
-                    <img src="../images/gif/dead.gif">
+                    <img src="../images/polarquest/dead.gif" class='center-image'>
                 </div>
 
                 <div class = "gallery-r">
-                    <p style="color: black"  class='condenser-text'>If the player takes one wrong step, he can fall through the melting ice sheet and die. 
-                    <br/>
-                    <br/>
+                    <p class='condenser-text'>If the player takes one wrong step, he can fall through the melting ice sheet and die.
                     The game can also end if the player loses all his health points. </p>
                 </div>
             </div>
@@ -470,19 +411,19 @@
 </section>
 
     
-<section id="gallery" class="s-gallery" style='background-color: #000000;'>
+<section id="outcome" class="s-gallery project" >
     <div class='condenser-gallery'>
-        <div class="row section-header" data-aos="fade-up" style='margin-left: 0;'>
-            <h3 class="subhead" align='left' style='margin-left: 0; color:gray;'>Outcome</h3>
+        <div class="row section-header"  style='margin-left: 0;'>
+            <h3 class='section-header'>Outcome</h3>
         </div>
         
-        <div class="row section-header" data-aos="fade-up" style='margin-left: 0;'>
-            <p class='condenser-text' style='color: white; margin-bottom: 1%' align='left'>
+        <div class="row"  style='margin-left: 0;'>
+            <p style="color: black; font-size: 2rem">
                 This is a livestream of our presentation at the hackathon.
             </p>
             <br/>
             <a href='https://youtu.be/sewQZM4AYeI?t=2080' target='_blank'>
-                <img src='../images/nasa_tanu.png' style="width:100% ; height:auto">
+                <img src='../images/polarquest/presentation.png' style="width:100% ; height:auto">
             </a>
         </div>
     </div>
@@ -493,7 +434,7 @@
 <!--
 <section id="otherwork" class="s-otherwork" style='background-color: #000000;'>
 
-    <div class="row section-header" data-aos="fade-up">
+    <div class="row section-header" >
         <div class="col-full">
             <h3 class="subhead">Similar Projects</h3>
             <h1 class="display-2 display-2--dark" style='color:#ffffff'>You May Also Like</h1>
@@ -507,25 +448,6 @@
     </div>
 </section> 
 -->
-
-<!-- contact
-================================================== -->
-<section id="contact" class="s-contact" style='background-color: #2f0f1d;'>
-
-    <div class="row section-header" data-aos="fade-up">
-        <div class="col-full">
-            <h3 class="subhead">Like what you see?</h3>
-            <h1 class="display-2 display-2--dark" style='color:#ffffff'>Have Questions?</h1>
-        </div>
-
-        <div class="centre">
-            <a href='mailto:tsangoi@uw.edu?subject=Hi Tanya&body=' class="btn btn--stroke">
-                Get in touch
-            </a>
-        </div>
-    </div>
-</section> <!-- end s-contact -->
-
 
 
 <!-- footer
@@ -635,6 +557,7 @@
 <script src="../js/plugins.js"></script>
 <script src="../js/main.js"></script>
 <script>
+    document.getElementById('process_vid').play();
     $(document).ready(function() {
        $('.mobile-nav-icon').click(function() {
           $('.mobile-nav-links').css('display', $('.mobile-nav-links').css('display') == 'block' ? 'none' : 'block');

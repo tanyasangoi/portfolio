@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style/Style.css">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8" language="JavaScript"></script>
+    <script src="js/liquidFillGauge.js" language="JavaScript"></script>
+    <script src="js/thermometer.js" language="JavaScript"></script>
+    <script src="js/particles.js" language="JavaScript"></script>
+    <script src="js/maltprocess.js" language="JavaScript"></script>
+
+
+
+
+
+</head>
+
+<body>
+
+<div class="topnav">
+    <a href="Home.html" >Home</a>
+    <a href="Malting.html" class="active">Malting</a>
+    <a href="Mashing.html">Mashing</a>
+    <a href="Boiling.html">Boiling & Hopping</a>
+    <a href="Fermenting.html">Fermenting</a>
+    <a href="Bottling.html">Bottling & Carbonation</a>
+
+</div>
+
+<h1>Malting</h1>
+
+<div class="row">
+        <div class="malt" id="malt"></div>
+        <div class="kiln" id="kiln"><p style="color: white; text-align: center; line-height: 120px;">Kiln</p></div>
+        <div class="mill" id="mill"><p style="color: white; text-align: center; line-height: 120px;">Mill</p></div>
+
+    <div class="text" style="margin-top: 100px; margin-left: 680px; height: 400px;">
+        <p id="first">The brewing process starts with grains, usually barley.
+            The first step involves processing the harvested grains by heating and drying.
+            Click <a id="firsta" onclick="wheatIn(); this.onclick=null;">here</a> to send the harvested grain into the kiln and heat it.
+        </p>
+
+        <p id="next" style="opacity: 0;"> Next, you have to crack and mill the grains to isolate the enzymes needed for brewing. Click
+            <a onclick="maltOut(); this.onclick=null;">here</a>
+            to mill the grain.  <br> <br>
+
+            The grain is now ready to be mashed. Click the next page button below to continue.
+        </p>
+    </div>
+</div>
+
+<div class="row" id="nav" >
+    <button class="button" > <a href="Home.html"> Previous: Home </a> </button>
+    <button class="button" ><a href="Mashing.html"> Next: Mashing </a> </button>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

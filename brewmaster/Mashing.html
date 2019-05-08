@@ -1,0 +1,84 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style/Style.css">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8" language="JavaScript"></script>
+    <script src="js/liquidFillGauge.js" language="JavaScript"></script>
+    <script src="js/thermometer.js" language="JavaScript"></script>
+    <script src="js/particles.js" language="JavaScript"></script>
+    <script src="js/vslider.js" language="JavaScript"></script>
+</head>
+
+<body>
+
+<div class="topnav">
+    <a href="Home.html" >Home</a>
+    <a href="Malting.html">Malting</a>
+    <a href="Mashing.html"class="active">Mashing</a>
+    <a href="Boiling.html">Boiling & Hopping</a>
+    <a href="Fermenting.html">Fermenting</a>
+    <a href="Bottling.html">Bottling & Carbonation</a>
+
+</div>
+
+<h1>Mashing</h1>
+
+
+<div class="row">
+    <div class="thermo">
+        <!--<script> drawthermo(1); </script>-->
+        <svg id="tempslider" width="100" height="350"></svg>
+        <p id="alert1" style="color: white; font-size: 19px"> Nothing is happening. Increase the temperature. </p>
+        <p id="alert2" style="color: white; font-size: 19px"> That's too high. Your mixture is getting burnt. Reduce the temperature. </p>
+    </div>
+    <div class="partdiv1">
+        <script> rendersugar(); </script>
+    </div>
+    <div class="partdiv2">
+        <script> rendergrain(); </script>
+    </div>
+    <div class="viz"><svg id="fillgauge3" width="400px" height="400px" opacity="0.4"></svg>
+        <script>
+            var config3 = liquidFillGaugeDefaultSettings();
+            config3.waveRiseTime = 3000;
+            var gauge3 = loadLiquidFillGauge("fillgauge3", 0, config3);
+        </script>
+
+
+    </div>
+
+    <div class="text">
+        <p id="first">In the second step of the process, you have to <b>mash</b> the grains. To do this, you must first add water
+            to the milled malt. Click <a id="addwater" onclick="gauge3.update(78); hideP(); rendertemp(1, 0, 0); this.onclick=null;">here</a> to do this. <br> </p>
+
+        <p id="setheat" style="color: white"> <!--Next, you have to heat the mixture to activates enzymes in the grains that cause it to break down and release its sugars. Click
+            <a onclick="changeColor(4000); changeTemp(4000, 75, 110); rendersugar(); displaysugar(); this.onclick=null;">here</a>
+            to start this process. Notice the temperature on the thermometer rise. During this stage, the mixture should
+            be heated to a temperature between 100-170F. -->
+            Next, you have to heat the mixture to activates enzymes in the grains that cause it to break down and release its sugars.
+            Drag the thermometer slider to a temperature between 100-170F to heat the mixture. <br> </p>
+
+        <p id="next" style="color: white"> Now, drain the water from the mash which is full of sugar from the grains. Click
+            <a id="drain"  style="color: white" onclick="changeOpacity(); gauge3.update(45); this.onclick=null;">here</a>
+            to drain out the grains and excess water. <br> <br>
+
+            The sticky, sweet liquid left behind is called <b>wort</b>. It’s basically unmade beer, sort of like how dough is unmade bread. <br> <br>
+            Click the next page button below to continue on your beer-making journey! </p>
+    </div>
+
+
+
+</div>
+
+<div class="row" id="nav">
+    <button class="button" ><a href="Malting.html"> Previous: Malting </a></button>
+    <button class="button" ><a href="Boiling.html"> Next: Boiling & Hopping </a></button>
+</div>
+
+
+
+
+
+</body>
+</html>

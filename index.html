@@ -75,6 +75,20 @@
             <a href="#" data-lander='contact' class='landing-navigator'>Contact</a>
         </div>
     </div>
+    <div class='mobile-nav'>
+            <div class='nav-logo'>
+                <a href='#' class='logo' onclick='$(".landing-navigator")[1].click()'>
+                    <img src="images/TS.png" alt="Homepage">
+                </a>
+            </div>
+            <div class='mobile-nav-links'>
+                <a href='#' onclick='$(".landing-navigator")[0].click()'>About</a>
+                <a href='#' onclick='$(".landing-navigator")[2].click()'>Contact</a>
+            </div>
+            <a class='mobile-nav-icon' href='javascript:void(0)' style="height: auto">
+                <i class='fa fa-bars'></i>
+            </a>
+    </div>
     
     <div class='contact-landing-section lander'>
         <div class='contact-container'>
@@ -231,7 +245,7 @@
                     <div class='work-item-text-area'>
                         <h1 align='center' class='work-item-text-header'>Magic Leap & Pac Sci</h1>
                         <h1 align='center' class='work-item-text-pitch'>Experience Design | Mixed Reality</h1>
-                        <h1 align='right' class='work-item-wip'><i class="fas fa-rocket"></i>&nbsp;&nbsp;Coming Soon`</h1>
+                        <h1 align='right' class='work-item-wip'><i class="fas fa-rocket"></i>&nbsp;&nbsp;Coming Soon</h1>
                     </div>
                 </div>
                 </a>
@@ -296,17 +310,6 @@
     <link rel='stylesheet' href='css/jquery-ui.css'>
 -->
     <script src="js/main.js"></script>
-<!--
-    <script>
-        $(document).ready(function() {
-
-           $('.mobile-nav-icon').click(function() {
-              $('.mobile-nav-links').css('display', $('.mobile-nav-links').css('display') == 'block' ? 'none' : 'block');
-           });
-        });
-
-    </script>
--->
     <script src='http://code.jquery.com/color/jquery.color.plus-names-2.1.2.min.js'></script>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src='js/custom.js'></script>

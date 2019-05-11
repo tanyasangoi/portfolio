@@ -73,6 +73,22 @@
         </div>
     </div>
     
+    <div class='mobile-nav'>
+        <div class='nav-logo'>
+            <a href='../../?page=about' class='logo'>
+                <img src="../../images/TS.png" alt="Homepage">
+            </a>
+        </div>
+        <div class='mobile-nav-links'>
+            <a href='../../?page=about'>About</a>
+            <a href='../../?page=contact'>Contact</a>
+        </div>
+        <a class='mobile-nav-icon' href='javascript:void(0)' style="height: auto">
+            <i class='fa fa-bars'></i>
+        </a>
+    </div>
+    <div class='section-nav hidden'></div>
+    
     <div class='lightbox'>
         <div class='lightbox-arrow-left-container'>
             <button class='btn btn--stroke-whitebg lightbox-arrow nohover' data-dir='left'>
@@ -432,7 +448,7 @@
             <div class="horizontal">
                 <img class='center-image' src='../../images/samsungsupport/18.jpg' style='width:100%; border: 1px solid lightgray'>
              <p style="color: black ; font-weight: bold"> NEW DESIGN </p>
-                <img class='center-image' src='../../images/samsungsupport/Repair%20Soln.jpg' style='width:100%; border: 1px solid lightgray''>
+                <img class='center-image' src='../../images/samsungsupport/Repair%20Soln.jpg' style='width:100%; border: 1px solid lightgray'>
             </div>
         </div>
     </div>
@@ -447,7 +463,7 @@
         <div class="row horizontal" >
             <div class="horizontal">
                 <p class='condenser-text'>
-                    The insights that i derived from the user research phase significantly shaped the design process and helped my fellow designers. The redesign was greatly received by the project manager of this project. 
+                    The insights that I derived from the user research phase significantly shaped the design process and helped my fellow designers. The redesign was greatly received by the project manager of this project. 
                 </p>
             </div>
         </div>
@@ -583,11 +599,13 @@
 <script src="../../js/plugins.js"></script>
 <script src="../../js/main.js"></script>
 <script>
-    $(document).ready(function() {
-       $('.mobile-nav-icon').click(function() {
-          $('.mobile-nav-links').css('display', $('.mobile-nav-links').css('display') == 'block' ? 'none' : 'block');
-       });
-    });
+    var links = [
+        'Problem',
+        'Background',
+        'Process',
+        'Solution',
+        'Outcome'
+    ];
 </script>
 <script src='../../js/custom.js'></script>
 </body>

@@ -72,6 +72,21 @@
             <a href="../?page=contact">Contact</a>
         </div>
     </div>
+    <div class='mobile-nav'>
+            <div class='nav-logo'>
+                <a href='../?page=about' class='logo'>
+                    <img src="../images/TS.png" alt="Homepage">
+                </a>
+            </div>
+            <div class='mobile-nav-links'>
+                <a href='../?page=about'>About</a>
+                <a href='../?page=contact'>Contact</a>
+            </div>
+            <a class='mobile-nav-icon' href='javascript:void(0)' style="height: auto">
+                <i class='fa fa-bars'></i>
+            </a>
+    </div>
+    <div class='section-nav hidden'></div>
     
     <div class='lightbox'>
         <div class='lightbox-arrow-left-container'>
@@ -596,11 +611,13 @@
 <script src="../js/plugins.js"></script>
 <script src="../js/main.js"></script>
 <script>
-    $(document).ready(function() {
-       $('.mobile-nav-icon').click(function() {
-          $('.mobile-nav-links').css('display', $('.mobile-nav-links').css('display') == 'block' ? 'none' : 'block');
-       });
-    });
+    var links = [
+        'Problem',
+        'Background',
+        'Process',
+        'Solution',
+        'Outcome'
+    ];
 </script>
 <script src='../js/custom.js'></script>
 </body>

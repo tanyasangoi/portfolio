@@ -75,6 +75,22 @@
             <a href="../?page=contact">Contact</a>
         </div>
     </div>
+    <div class='mobile-nav'>
+            <div class='nav-logo'>
+                <a href='../?page=about' class='logo'>
+                    <img src="../images/TS.png" alt="Homepage">
+                </a>
+            </div>
+            <div class='mobile-nav-links'>
+                <a href='../?page=about'>About</a>
+                <a href='../?page=contact'>Contact</a>
+            </div>
+            <a class='mobile-nav-icon' href='javascript:void(0)' style="height: auto">
+                <i class='fa fa-bars'></i>
+            </a>
+    </div>
+    
+    <div class='section-nav hidden'></div>
     
     <div class='lightbox'>
         <div class='lightbox-arrow-left-container'>
@@ -275,6 +291,37 @@
 
 </section>
 -->
+    
+<section id="problem" class='project'>
+    <div class='condenser'>
+        <div class="row section-header"  style='margin-left: 0;'>
+            <h3 class="section-header">Problem</h3>
+        </div>
+
+        <div class="row horizontal" >
+            <div class="horizontal">
+                <p class='condenser-text'>
+                    The Wally App had several flaws that hindered product installation. 
+                </p>
+                <ul class='condenser-text'>
+                    <li>Installation was a prerequisite to using the products </li>
+                    <li>Current installation instructions were daunting to a non-technical user</li>
+                    <li>Incorrect installation resulted in problems during the use of the product</li>
+                </ul>
+                
+                <p class='condenser-text'>
+                    Furthermore, it had several issues that degraded the overall experience of using the application: 
+                </p>
+                <ul class='condenser-text'>
+                    <li>There was a lack of feedback that was given to the user which resulted in a lot of confusion</li>
+                    <li>The exact number of steps required to complete an installation activity was not stated which resulted in user impatience</li>
+                    <li>Important contextual information was buried in the application and was not easy to search for</li>
+                    <li>It was difficult to monitor alerts for multiple properties</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- process
 ================================================== -->
@@ -315,37 +362,6 @@
         </div>
     </div>
 </section> <!-- end s-problem -->
-    
-<section id="problem" class='project'>
-    <div class='condenser'>
-        <div class="row section-header"  style='margin-left: 0;'>
-            <h3 class="section-header">Problem</h3>
-        </div>
-
-        <div class="row horizontal" >
-            <div class="horizontal">
-                <p class='condenser-text'>
-                    The Wally App had several flaws that hindered product installation. 
-                </p>
-                <ul class='condenser-text'>
-                    <li>Installation was a prerequisite to using the products </li>
-                    <li>Current installation instructions were daunting to a non-technical user</li>
-                    <li>Incorrect installation resulted in problems during the use of the product</li>
-                </ul>
-                
-                <p class='condenser-text'>
-                    Furthermore, it had several issues that degraded the overall experience of using the application: 
-                </p>
-                <ul class='condenser-text'>
-                    <li>There was a lack of feedback that was given to the user which resulted in a lot of confusion</li>
-                    <li>The exact number of steps required to complete an installation activity was not stated which resulted in user impatience</li>
-                    <li>Important contextual information was buried in the application and was not easy to search for</li>
-                    <li>It was difficult to monitor alerts for multiple properties</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
     
 <!-- solution
 ================================================== -->
@@ -418,7 +434,7 @@
                     <li>Surfacing important information</li>
                     <li>Providing feedback</li>
                 </ul>
-                <img src="../images/wallyhome/Surface%20Important%20Information.png" class='center-image'>
+                <img src="../images/wallyhome/surface_info.png" class='center-image'>
                 <img src="../images/wallyhome/Provide%20Feedback.png" class='center-image'>
                 <img src="../images/wallyhome/Show%20Context.png" class='center-image'>
             </div>
@@ -574,12 +590,13 @@
 <script src="../js/plugins.js"></script>
 <script src="../js/main.js"></script>
 <script>
-    document.getElementById('process_vid').play();
-    $(document).ready(function() {
-       $('.mobile-nav-icon').click(function() {
-          $('.mobile-nav-links').css('display', $('.mobile-nav-links').css('display') == 'block' ? 'none' : 'block');
-       });
-    });
+    var links = [
+        'Problem',
+        'Background',
+        'Process',
+        'Solution',
+        'Outcome'
+    ];
 </script>
 <script src='../js/custom.js'></script>
 </body>

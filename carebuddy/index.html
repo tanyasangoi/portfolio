@@ -72,6 +72,21 @@
             <a href="../?page=contact">Contact</a>
         </div>
     </div>
+    <div class='mobile-nav'>
+            <div class='nav-logo'>
+                <a href='../?page=about' class='logo'>
+                    <img src="../images/TS.png" alt="Homepage">
+                </a>
+            </div>
+            <div class='mobile-nav-links'>
+                <a href='../?page=about'>About</a>
+                <a href='../?page=contact'>Contact</a>
+            </div>
+            <a class='mobile-nav-icon' href='javascript:void(0)' style="height: auto">
+                <i class='fa fa-bars'></i>
+            </a>
+    </div>
+    <div class='section-nav hidden'></div>
     
     <div class='lightbox'>
         <div class='lightbox-arrow-left-container'>
@@ -278,7 +293,7 @@
 
 <!-- problem
 ================================================== -->
-<section id="problem" class="s-problem project" style='background-color: white;'>
+<section id="research_question" class="s-problem project" style='background-color: white;'>
 <div class='condenser'>
     <div class="row section-header"  style='margin-left: 0;'>
         <h3 class="section-header">Research Question</h3>
@@ -416,7 +431,7 @@
     
 <!-- solution
 ================================================== -->
-<section id="solution" class="s-solution project" >
+<section id="analysis" class="s-solution project" >
     <div class='condenser'>
         <div class="row section-header"  style='margin-left: 0;'>
             <h3 class="section-header">Analysis</h3>
@@ -487,7 +502,7 @@
     </div>
 </section>
     
-<section id="outcome" class="s-process project">
+<section id="recommendations" class="s-process project">
     <div class='condenser'>
         <div class="row section-header"  style='margin-left: 0;'>
             <h3 class="section-header">Recommendations</h3>
@@ -625,12 +640,13 @@
 <script src="../js/plugins.js"></script>
 <script src="../js/main.js"></script>
 <script>
-    document.getElementById('process_vid').play();
-    $(document).ready(function() {
-       $('.mobile-nav-icon').click(function() {
-          $('.mobile-nav-links').css('display', $('.mobile-nav-links').css('display') == 'block' ? 'none' : 'block');
-       });
-    });
+    var links = [
+        'Research Question',
+        'Background',
+        'Process',
+        'Analysis',
+        'Recommendations'
+    ];
 </script>
 <script src='../js/custom.js'></script>
 </body>

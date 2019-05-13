@@ -1564,6 +1564,10 @@ color:black;
         float:none;
         width:100%;
     }
+
+    .project-tiles-container {
+        width:90%;
+    }
     
     .mobile-nav {
         display:block;

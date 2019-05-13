@@ -26,8 +26,8 @@
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20970">
-              <caret line="1398" column="5" selection-start-line="1398" selection-start-column="5" selection-end-line="1398" selection-end-column="5" />
+            <state relative-caret-position="23070">
+              <caret line="1538" column="5" selection-start-line="1538" selection-start-column="5" selection-end-line="1538" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -179,7 +179,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="835" />
@@ -283,15 +283,15 @@
       <workItem from="1554496007798" duration="332000" />
       <workItem from="1555102923710" duration="2405000" />
       <workItem from="1557336128684" duration="2012000" />
-      <workItem from="1557617073487" duration="258000" />
+      <workItem from="1557617073487" duration="259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104020000" />
+    <option name="totallyTimeSpent" value="104021000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="835" extended-state="1" />
+    <frame x="0" y="23" width="1440" height="835" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
@@ -691,8 +691,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20970">
-          <caret line="1398" column="5" selection-start-line="1398" selection-start-column="5" selection-end-line="1398" selection-end-column="5" />
+        <state relative-caret-position="23070">
+          <caret line="1538" column="5" selection-start-line="1538" selection-start-column="5" selection-end-line="1538" selection-end-column="5" />
         </state>
       </provider>
     </entry>

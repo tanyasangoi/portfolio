@@ -310,7 +310,7 @@
 <!-- solution
 ================================================== -->
 <section id="solution" class="s-solution project">
-    <div class='condenser-gallery'>
+    <div class='condenser'>
         <div class="row section-header"  style='margin-left: 0;'>
             <h3 class='section-header'>Solution</h3>
         </div>
@@ -322,7 +322,7 @@
                 </p>
             </div>
         </div>
-        <img src='../images/polarquest/website%20mockup.png' style="width:100% ; height:auto">
+        <img src='../images/polarquest/website%20mockup.png' class='center-image' style='width:100%;'>
         <div class="row horizontal gallery-section" >
             <h3 class='section-subheader'>Gameplay</h3>
             <br/>
@@ -429,7 +429,7 @@
 
     
 <section id="outcome" class="s-gallery project" >
-    <div class='condenser-gallery'>
+    <div class='condenser'>
         <div class="row section-header"  style='margin-left: 0;'>
             <h3 class='section-header'>Outcome</h3>
         </div>
@@ -445,26 +445,13 @@
         </div>
     </div>
 </section> <!-- end s-role -->
-
-<!-- otherwork
-================================================== -->
-<!--
-<section id="otherwork" class="s-otherwork" style='background-color: #000000;'>
-
-    <div class="row section-header" >
-        <div class="col-full">
-            <h3 class="subhead">Similar Projects</h3>
-            <h1 class="display-2 display-2--dark" style='color:#ffffff'>You May Also Like</h1>
-        </div>
+    
+<section id='projects' class='project' style='color:white !important'>
+    <div class='project-tiles-container'>
+        <h3 class='overview-header'>Some of my other work...</h3>
+        <br/>
     </div>
-
-    <div class='row' data-aos='fade-up'>
-        <div class='centre suggestions-container' >
-
-        </div>
-    </div>
-</section> 
--->
+</section>
 
 
 <!-- footer
@@ -575,6 +562,7 @@
 <script src="../js/main.js"></script>
 <script>
     document.getElementById('process_vid').play();
+    var projectDataPrefix = '../';
     var links = [
         'Problem',
         'Background',

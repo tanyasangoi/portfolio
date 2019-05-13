@@ -179,22 +179,15 @@ $('.lightbox-arrow').click(function() {
     lightboxNavigate(dir);
 });
 
-//$(window).resize(function() {
-//    var sectionCutoff = $('.overview-section').offset().top + $('.overview-section').height();
-//    var sectionNavOffset = $('.section-nav').offset().top - $('.section-nav').height()
-//    if (sectionNavOffset > sectionCutoff) {
-//        $('.sectionNav').css({display: 'block'});
-//    } else {
-//        $('.sectionNav').css({display: 'none'});
-//    }
-//});
-
 
 function handleSectionNav() {
     if ($('.sticky-nav').css('display') != 'none') {
         var sectionCutoff = $('.overview-section').offset().top + $('.overview-section').height();
-        var sectionNavOffset = $('.section-nav').offset().top - $('.section-nav').height();
-        if (sectionNavOffset > sectionCutoff) {
+        var projectCutoff = $('#projects').offset().top;
+        var navTop = $('.section-nav').offset().top - $('.section-nav').height();
+        var navBottom = $('.section-nav').offset().top + $('.section-nav').height();
+        
+        if (navTop > sectionCutoff && navBottom < projectCutoff) {
             $('.section-nav').removeClass('hidden');
         } else {
             $('.section-nav').addClass('hidden');
@@ -248,6 +241,140 @@ if (sectionNav) {
         ,'slow'); 
     });
 }
+
+var projectData = [
+    {
+        link: 'foodiefanatic',
+        img: 'images/foodiefanatic/foodie2.png',
+        title: 'Foodie Fanatic',
+        subtext: 'Information Architecture',
+        state: ''
+    },
+    {
+        link: 'wallyhome',
+        img: 'images/wallyhome/wallyhome.png',
+        title: 'Wally Home',
+        subtext: 'UX Design | IoT',
+        state: ''
+        
+    },
+    {
+        link: 'carebuddy',
+        img: 'images/carebuddy/Dementia.png',
+        title: 'Care Buddy',
+        subtext: 'User Research',
+        state: ''
+    },
+    {
+        link: 'nasa',
+        img: 'images/polarquest/SEASPACE.jpg',
+        title: 'Nasa Hackathon',
+        subtext: 'Game Design',
+        state: ''
+    }
+];
+
+
+
+var projectsContainer = document.getElementsByClassName('project-tiles-container');
+if(projectsContainer.length) {
+    projectsContainer = projectsContainer[0];
+} else {
+    projectsContainer = -1;
+}
+
+function randomItem(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+if (projectsContainer != -1) {
+    
+    var split = window.location.href.split('/');
+    var currentLink = split[split.length - 2];
+    
+    var addedTiles = [];
+    var projectRow = document.createElement('div');
+    projectRow.className = 'project-tile-row';
+    projectsContainer.appendChild(projectRow);
+    while(addedTiles.length != 2) {
+        i = randomItem(0, projectData.length);
+        if (addedTiles.includes(i)) continue;
+        var data = projectData[i];
+        if (data['link'] == currentLink) continue;
+        addedTiles.push(i);
+//      if (i % 2 == 0) {
+//        var projectRow = document.createElement('div');
+//        projectRow.className = 'project-tile-row';
+//        projectsContainer.appendChild(projectRow);
+//      }
+        var lastRow = document.querySelector('.project-tiles-container .project-tile-row:last-child');
+        
+        var link = document.createElement('a');
+        link.className = 'project-link';
+        link.href = projectDataPrefix + data['link'];
+        
+        var tile = document.createElement('div');
+        tile.className = 'project-tile';
+        
+        var textArea = document.createElement('div');
+        textArea.className = 'project-text-area';
+        
+        var title = document.createElement('h1');
+        title.className = 'project-title';
+        title.innerHTML = data['title'];
+        
+        var subtext = document.createElement('h3');
+        subtext.className = 'project-subtext';
+        subtext.innerHTML = data['subtext'];
+        
+        var state = document.createElement('h5');
+        state.classList.add('project-state');
+        
+        if (data['state'].length) {
+            state.classList.add(data['state'].toLocaleLowerCase());
+            state.innerHTML = data['state'] == 'Protected' ? '&nbsp;&nbsp;Password Protected' : '&nbsp;&nbsp;Coming Soon';
+        }
+        
+        lastRow.appendChild(link);
+        link.appendChild(tile);
+        tile.appendChild(textArea);
+        tile.style.background = 'url("'+projectDataPrefix+''+data['img']+'")';
+        textArea.appendChild(title);
+        textArea.appendChild(subtext);
+        tile.appendChild(state);
+    }
+
+    
+
+    
+}
+
+
+//
+//    <div class='project-tiles-container'>
+//        <div class='project-tile-row'>
+//            <a class='project-tile-link-half'>
+//                <div class='project-tile'>
+//                    <div class='project-text-area'>
+//                        <h1 class='project-title'>Foodie Fanatic</h1>
+//                        <h3 class='project-subtext'>Information Architecture</h3>
+//                    </div>
+//                    <h5 class='project-state wip'>State</h5>
+//                </div>
+//            </a>
+//            <a class='project-tile-link-half'>
+//                <div class='project-tile'>
+//                    <div class='project-text-area'>
+//                        <h1 class='project-title'>Title</h1>
+//                        <h3 class='project-subtext'>Subtext</h3>
+//                    </div>
+//                    <h5 class='project-state protected'>State</h5>
+//                </div>
+//            </a>
+//        </div>
+//    </div>
+
+
 
 
 

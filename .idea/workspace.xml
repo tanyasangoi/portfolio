@@ -17,7 +17,7 @@
       <file leaf-file-name="project_cvm.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project_cvm.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2261">
+            <state relative-caret-position="15">
               <caret line="362" column="56" selection-start-line="362" selection-start-column="56" selection-end-line="362" selection-end-column="56" />
             </state>
           </provider>
@@ -26,8 +26,8 @@
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="1326" column="5" lean-forward="true" selection-start-line="1326" selection-start-column="5" selection-end-line="1326" selection-end-column="5" />
+            <state relative-caret-position="20970">
+              <caret line="1398" column="5" selection-start-line="1398" selection-start-column="5" selection-end-line="1398" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -35,7 +35,7 @@
       <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="7155">
               <caret line="477" selection-start-line="477" selection-end-line="477" />
             </state>
           </provider>
@@ -44,7 +44,7 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="52470">
               <caret line="3498" column="1" selection-start-line="3498" selection-start-column="1" selection-end-line="3498" selection-end-column="1" />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="project_beer.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project_beer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
+            <state relative-caret-position="2235">
               <caret line="149" column="16" selection-start-line="149" selection-start-column="16" selection-end-line="149" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -78,10 +78,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="58" lean-forward="true" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
-              <folding>
-                <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+              <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -192,7 +189,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,6 +205,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,11 +283,12 @@
       <workItem from="1554496007798" duration="332000" />
       <workItem from="1555102923710" duration="2405000" />
       <workItem from="1557336128684" duration="2012000" />
+      <workItem from="1557617073487" duration="258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103762000" />
+    <option name="totallyTimeSpent" value="104020000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="835" extended-state="1" />
@@ -318,19 +316,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39755768" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -352,9 +350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2610">
           <caret line="174" column="34" selection-start-line="174" selection-start-column="27" selection-end-line="174" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -654,16 +649,13 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="58" lean-forward="true" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
-          <folding>
-            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project_beer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
+        <state relative-caret-position="2235">
           <caret line="149" column="16" selection-start-line="149" selection-start-column="16" selection-end-line="149" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -685,28 +677,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="52470">
           <caret line="3498" column="1" selection-start-line="3498" selection-start-column="1" selection-end-line="3498" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="7155">
           <caret line="477" selection-start-line="477" selection-end-line="477" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="1326" column="5" lean-forward="true" selection-start-line="1326" selection-start-column="5" selection-end-line="1326" selection-end-column="5" />
+        <state relative-caret-position="20970">
+          <caret line="1398" column="5" selection-start-line="1398" selection-start-column="5" selection-end-line="1398" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project_cvm.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
+        <state relative-caret-position="15">
           <caret line="362" column="56" selection-start-line="362" selection-start-column="56" selection-end-line="362" selection-end-column="56" />
         </state>
       </provider>

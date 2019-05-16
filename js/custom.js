@@ -212,9 +212,14 @@ function handleSectionNav() {
 }
 
 var sectionNav = document.getElementsByClassName('section-nav');
-if (sectionNav.length) {
-    sectionNav = sectionNav[0];
+if (typeof(sectionNav) != 'undefined') {
+    if (sectionNav.length) {
+        sectionNav = sectionNav[0];
+    } else {
+        sectionNav = false;
+    }
 }
+
 if (sectionNav) {
     for(var i = 0; i < links.length; i++) {
         var a = document.createElement('a');
@@ -271,6 +276,13 @@ var projectData = [
         title: 'Nasa Hackathon',
         subtext: 'Game Design',
         state: ''
+    },
+    {
+        link: 'project-alive',
+        img: 'images/magic-leap-dino.png',
+        title: 'Project Alive',
+        subtext: 'Experience Design | MR',
+        state: ''
     }
 ];
 
@@ -293,12 +305,14 @@ if (projectsContainer != -1) {
     var currentLink = split[split.length - 2];
     
     var addedTiles = [];
-    var projectRow = document.createElement('div');
-    projectRow.className = 'project-tile-row';
-    projectsContainer.appendChild(projectRow);
-    while(addedTiles.length != 2) {
+    while(addedTiles.length != 4) {
         i = randomItem(0, projectData.length);
         if (addedTiles.includes(i)) continue;
+        if (addedTiles.length % 2 == 0) {
+            var projectRow = document.createElement('div');
+            projectRow.className = 'project-tile-row';
+            projectsContainer.appendChild(projectRow);
+        }
         var data = projectData[i];
         if (data['link'] == currentLink) continue;
         addedTiles.push(i);
